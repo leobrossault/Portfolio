@@ -1,0 +1,139 @@
+/* BOLD */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_bd-webfont.eot');
+    src: url('../fonts/effra_std_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_bd-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_bd-webfont.woff') format('woff'),
+         url('../fonts/effra_std_bd-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_bd-webfont.svg#effrabold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* BOLD ITALIC */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_bdit-webfont.eot');
+    src: url('../fonts/effra_std_bdit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_bdit-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_bdit-webfont.woff') format('woff'),
+         url('../fonts/effra_std_bdit-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_bdit-webfont.svg#effrabold_italic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+/* HEAVY */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_he-webfont.eot');
+    src: url('../fonts/effra_std_he-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_he-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_he-webfont.woff') format('woff'),
+         url('../fonts/effra_std_he-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_he-webfont.svg#effra_heavyregular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/* HEAVY ITALIC */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_heit-webfont.eot');
+    src: url('../fonts/effra_std_heit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_heit-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_heit-webfont.woff') format('woff'),
+         url('../fonts/effra_std_heit-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_heit-webfont.svg#effra_heavyitalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+/* ITALIC */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_it-webfont.eot');
+    src: url('../fonts/effra_std_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_it-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_it-webfont.woff') format('woff'),
+         url('../fonts/effra_std_it-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_it-webfont.svg#effraitalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+/* LIGHT */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_lt-webfont.eot');
+    src: url('../fonts/effra_std_lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_lt-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_lt-webfont.woff') format('woff'),
+         url('../fonts/effra_std_lt-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_lt-webfont.svg#effra_lightregular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+/* LIGHT ITALIC */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_ltit-webfont.eot');
+    src: url('../fonts/effra_std_ltit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_ltit-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_ltit-webfont.woff') format('woff'),
+         url('../fonts/effra_std_ltit-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_ltit-webfont.svg#effra_lightitalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+/* MEDIUM */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_md-webfont.eot');
+    src: url('../fonts/effra_std_md-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_md-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_md-webfont.woff') format('woff'),
+         url('../fonts/effra_std_md-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_md-webfont.svg#effra_mediumregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* MEDIUM ITALIC */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_mdit-webfont.eot');
+    src: url('../fonts/effra_std_mdit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_mdit-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_mdit-webfont.woff') format('woff'),
+         url('../fonts/effra_std_mdit-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_mdit-webfont.svg#effra_mediumitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+/* REGULAR */
+@font-face {
+    font-family: 'effra';
+    src: url('../fonts/effra_std_rg-webfont.eot');
+    src: url('../fonts/effra_std_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/effra_std_rg-webfont.woff2') format('woff2'),
+         url('../fonts/effra_std_rg-webfont.woff') format('woff'),
+         url('../fonts/effra_std_rg-webfont.ttf') format('truetype'),
+         url('../fonts/effra_std_rg-webfont.svg#effraregular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}

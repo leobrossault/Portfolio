@@ -11,7 +11,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
   </head>
   <body>
@@ -22,11 +22,29 @@
       </div>
 
       <div class="content">
+        <div id="btn-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="#" id="btn-hello"><span>Say Hello</span></a>
         <div>
           <div ng-view></div>
         </div>
-      </div>
 
+        <div id="menu">
+          <ul>
+            <li><a href="#"><span>Nooke</span></a></li>
+            <li><a href="#"><span>Nut & Bold</span></a></li>
+            <li><a href="#"><span>Sncf</span></a></li>
+            <li><a href="#"><span>Rocket's Word</span></a></li>
+            <li><a href="#"><span>IUT de Laval</span></a></li>
+            <li><a href="#"><span>A Propos</span></a></li>
+            <li><a href="#"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -42,8 +60,10 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -54,5 +74,6 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

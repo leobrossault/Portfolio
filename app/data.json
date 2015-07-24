@@ -1,0 +1,68 @@
+{
+	"projects":[
+		{
+			"url": "nooke",
+			"title": "Nooke",
+			"number": "01",
+			"year": "2015",
+			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
+			"date": "2014, December",
+			"role": "Conception, Development",
+			"client": "SNCF & Gobelins",
+			"directory": "sncf",
+			"link": "#",
+			"sections": [
+				{
+					"title": "Home Page",
+					"image": "home-page.png"
+				},
+				{
+					"title": "Datavisualization",
+					"image": "datavisualization.png"
+				},
+				{
+					"title": "",
+					"image": "datavisualization2.png"
+				},
+				{
+					"title": "Mobile Version",
+					"image": "mobile.png"
+				}
+			],
+			"prev": "nut-and-bold",
+			"next": "rocket"
+		},
+		{
+			"url": "sncf",
+			"title": "sncf",
+			"number": "02",
+			"year": "2014",
+			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
+			"date": "2014, December",
+			"role": "Conception, Development",
+			"client": "SNCF & Gobelins",
+			"directory": "sncf",
+			"link": "#",
+			"sections": [
+				{
+					"title": "Home Page",
+					"image": "home-page.png"
+				},
+				{
+					"title": "Datavisualization",
+					"image": "datavisualization.png"
+				},
+				{
+					"title": "",
+					"image": "datavisualization2.png"
+				},
+				{
+					"title": "Mobile Version",
+					"image": "mobile.png"
+				}
+			],
+			"prev": "nooke",
+			"next": "nut-and-bold"
+		}
+	]
+}

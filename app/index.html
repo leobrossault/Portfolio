@@ -29,19 +29,19 @@
         </div>
 
         <a href="#" id="btn-hello"><span>Say Hello</span></a>
-        <div>
+        <div class="contain-view">
           <div ng-view></div>
         </div>
 
         <div id="menu">
           <ul>
-            <li><a href="#"><span>Nooke</span></a></li>
-            <li><a href="#"><span>Nut & Bold</span></a></li>
-            <li><a href="#"><span>Sncf</span></a></li>
-            <li><a href="#"><span>Rocket's Word</span></a></li>
-            <li><a href="#"><span>IUT de Laval</span></a></li>
-            <li><a href="#"><span>A Propos</span></a></li>
-            <li><a href="#"><span>Contact</span></a></li>
+            <li><a href="#/project/nooke"><span>Nooke</span></a></li>
+            <li><a href="#/project/sncf"><span>Sncf</span></a></li>
+            <li><a href="#/project/nut-and-bolt"><span>Nut & Bold</span></a></li>           
+            <li><a href="#/project/rocket"><span>Rocket's Word</span></a></li>
+            <li><a href="#/project/iut"><span>IUT de Laval</span></a></li>
+            <li><a href="#/about"><span>A Propos</span></a></li>
+            <li><a href="#/contact"><span>Contact</span></a></li>
           </ul>
         </div>
       </div>
@@ -61,9 +61,10 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -73,6 +74,7 @@
         <script src="scripts/controllers/project.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/services/returndata.js"></script>
         <!-- endbuild -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

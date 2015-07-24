@@ -1,0 +1,46 @@
+.ng-scope,
+.project-page,
+section {
+	height: 100%;
+	width: 100%;
+}
+
+
+section {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+	section .section-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	section .section-center {
+		display: block;
+		margin: auto;
+		width: 80%;
+	}
+
+	#home-project .number {
+		font-size: 10rem;
+		font-weight: 700;
+		color: #fff;
+		margin: 0;
+		opacity: 0.15;
+		text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+	}
+
+/* SNCF */
+
+#home-project {
+	background: url('../../images/projects/sncf/sncf_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+	#home-project section .section-center {
+
+	}

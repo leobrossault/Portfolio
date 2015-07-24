@@ -9,10 +9,10 @@
  * Main module of the application.
  */
 angular
-  	.module('portfolioApp', ['ngRoute'])
+  	.module('portfolioApp', ['ngRoute', 'ngAnimate'])
   	.config(function ($routeProvider) {
     $routeProvider
-      .when('/project', {
+      .when('/project/:name', {
         templateUrl: 'views/project.html',
         controller: 'ProjectCtrl'
       })

@@ -3,6 +3,8 @@ $('document').ready(function () {
 	var hWindow = $('.content').height();
 	var btnMenu = $('#btn-menu');
 	var sections = $('section');
+	var body = $('body');
+	var project = 0;
 
 		/* ANIMS */
 		var animMenu = new TimelineMax();
@@ -10,6 +12,7 @@ $('document').ready(function () {
 
 	/* EVENTS */
 	btnMenu.on('click', showMenu);
+	$('.contain-view').scroll(isInViewport);
 
 	/* INITS */
 	initPage ();
@@ -52,6 +55,47 @@ $('document').ready(function () {
 
 	function initPage () {
 		sections.height(hWindow);
-		// console.log(sections);
+
+		if ($('.content-view').hasClass('project-page')) {
+			project = 1;
+			console.log('project');
+		}
+
+		$('.contain-view').scroll(function (event) {
+		    var scrollY = $(this).scrollTop();
+		    
+		    if (scrollY != 0) {
+		    	body.addClass('scroll');
+		    } else {
+		    	body.removeClass('scroll');
+		    }
+
+		    if (project == 1) {
+		    	nav (scrollY);
+		    }
+		});
 	}
+
+	function isInViewport () {
+		var scrollTop = $(window).scrollTop();
+        var viewportHeight = $(window).height();
+
+        $('.isNot').each(function () {
+        	var top = $(this).offset().top;
+
+        	if(scrollTop + viewportHeight >= top ){
+        		$(this).removeClass('isNot');
+        		$(this).addClass('isIt');
+        	}
+        });
+	}
+
+	function goToChapter () {
+
+	}
+
+	function nav (posY) {
+
+	}
+
 });

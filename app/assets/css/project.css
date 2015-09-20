@@ -1,3 +1,5 @@
+@import url('_anim-project.css');
+
 .ng-scope,
 .project-page,
 section {
@@ -5,11 +7,15 @@ section {
 	width: 100%;
 }
 
+.project-page {
+	animation: growthPage 0.4s ease-in-out forwards;
+}
 
 section {
 	height: 100%;
 	width: 100%;
 	display: table;
+	background: #fff;
 }
 
 	section .section-container {
@@ -21,26 +27,267 @@ section {
 		display: block;
 		margin: auto;
 		width: 80%;
+		max-width: 70rem;
 	}
 
+	#nav {
+		position: absolute;
+		right: 10%;
+		top: 30%;
+		z-index: 999;
+	}
+
+		#nav div {
+			display: block;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 100%;
+			background: #fff;
+			margin-bottom: 1rem;
+			cursor: pointer;
+		}
+
 	#home-project .number {
-		font-size: 10rem;
+		font-size: 20rem;
 		font-weight: 700;
+		line-height: 1;
 		color: #fff;
 		margin: 0;
-		opacity: 0.15;
+		opacity: 0.75;
 		text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+		position: relative;
+		left: -1rem;
+		opacity: 0;
+		animation: animLeftToRight 0.8s 0.3s ease-in-out forwards;
 	}
+
+
+	#home-project .name .title {
+		font-size: 5.5rem;
+		font-weight: 700;
+		color: #fff;
+		text-align: left;
+		margin: 0;
+		text-transform: uppercase;
+		max-width: 49%;
+		line-height: 0.8;
+		float: left;
+		opacity: 0;
+		animation: animBottomToTop 0.8s 0.5s ease-in-out forwards;
+	}	
+
+	#home-project .name .title + p {
+		float: right;
+		max-width: 49%;
+		opacity: 0;
+		animation: animTopToBottom 0.8s 0.7s ease-in-out forwards;
+	}
+	
+	#home-project .name .date {
+		font-family: 'Times';
+		font-style: italic;
+		font-size: 1.8rem;
+		position: relative;
+		color: #fff;
+		padding-bottom: 0.2rem;
+	}
+
+		#home-project .name .date::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 0.1rem;
+			width: 60%;
+			background: #fff;
+		}
+
+	#home-project .name .description {
+		display: block;
+		font-size: 1.5rem;
+		color: #fff;
+		font-weight: 300;
+		margin-top: 0.5rem;
+	}
+
+	#info-project {
+		height: 100%;
+	}
+
+		#info-project .contain-infos {
+			width: 80%;
+			max-width: 70rem;
+			position: relative;
+			left: 10%;
+			margin: auto;
+			height: 100%;
+			max-height: 100%;
+			background: #fff;
+			padding: 0 6.5rem;
+			box-sizing: border-box;
+			transition: all 0.4s 0.2s ease-in-out;
+		}
+
+		#info-project.isNot .contain-infos {
+			max-height: 0;
+		}
+
+			#info-project .contain-infos .col-left {
+				width: 25%;
+				float: left;
+				padding-top: 16.2rem;
+			}	
+
+				#info-project .contain-infos .col-left div {
+					margin-bottom: 7rem;
+					opacity: 0;
+				}
+
+				#info-project.isIt .contain-infos .col-left div {
+					animation: animLeftToRight 0.8s 0.5s ease-in-out forwards;
+				}
+
+				#info-project.isIt .contain-infos .col-left div + div {
+					animation: animLeftToRight 0.8s 0.7s ease-in-out forwards;
+				}
+
+				#info-project.isIt .contain-infos .col-left div + div + div {
+					animation: animLeftToRight 0.8s 0.9s ease-in-out forwards;
+				}
+
+				#info-project .contain-infos .col-left p,
+				#info-project .contain-infos .col-left div:last-child {
+					margin: 0;
+				}
+
+				#info-project .contain-infos .col-left p.project-title-left,
+				#info-project .contain-infos .col-right .long-descr p:first-child {
+					color: #000;
+					font-weight: 700;
+					font-size: 2rem;
+					padding-bottom: 0.6rem;
+					border-bottom: 2px solid #000;
+					margin-bottom: 1rem;
+				}
+
+				#info-project .contain-infos .col-left p.project-descr-left {
+					font-family: 'Times';
+					font-style: italic;
+					color: #000;
+					font-size: 1.8rem;
+				}
+
+			#info-project .contain-infos .col-right {
+				width: 70%;
+				float: right;
+				padding-top: 7.5rem;
+			}
+
+				
+				#info-project .contain-infos .col-right h2 {
+					color: #333333;
+					text-transform: uppercase;
+					font-size: 3rem;
+					font-weight: 700;
+					border-bottom: 2px solid #000;
+					margin: 0 0 5rem 0;
+					opacity: 0;
+				}
+
+					#info-project.isIt .contain-infos .col-right h2 {
+						animation: animRightToLeft 0.8s 0.5s ease-in-out forwards;
+					}
+
+				#info-project .contain-infos .col-right .long-descr {
+					opacity: 0;
+				}
+
+					#info-project.isIt .contain-infos .col-right .long-descr {
+						animation: animRightToLeft 0.8s 0.8s ease-in-out forwards;
+					}
+
+				#info-project .contain-infos .col-right .long-descr p:first-child {
+					border-bottom: none;
+					position: relative;
+				}
+
+				#info-project .contain-infos .col-right .long-descr p:first-child::after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 50%;
+					height: 0.2rem;
+					background: #000;
+				}
+
+				#info-project .contain-infos .col-right .long-descr p:first-child + p {
+					font-size: 1.8rem;
+					font-weight: 300;
+				}
+
+		.screen-project > div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+			.screen-project .contain-screen {
+				width: 70%;
+				margin: auto;
+				padding: 2rem 0;
+				max-width: 100rem;
+			}
+
+			.screen-project .contain-screen p {
+				float: left;
+				max-width: 15%;
+				padding-top: 2rem;
+				font-family: 'Times';
+				font-style: italic;
+				font-size: 2rem;
+				position: relative;
+				padding-bottom: 0.3rem;
+				opacity: 0;
+			}
+
+				.screen-project.isIt .contain-screen p {
+					animation: animTopToBottom 0.8s 0.6s ease-in-out forwards;
+				}
+
+				.screen-project .contain-screen p::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 0.1rem;
+					width: 4rem;
+					background: #000;
+				}
+
+			.screen-project .contain-screen img {
+				float: right;
+				max-width: 85%;
+				padding-top: 2rem;
+				opacity: 0;
+			}
+
+				.screen-project.isIt .contain-screen img {
+					animation: animBottomToTop 0.8s 0.9s ease-in-out forwards;
+				}
 
 /* SNCF */
 
-#home-project {
+.sncf #home-project {
 	background: url('../../images/projects/sncf/sncf_section_1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 }
 
-	#home-project section .section-center {
 
-	}
+.sncf #info-project {
+	background: url('../../images/projects/sncf/sncf_section_2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;	
+}

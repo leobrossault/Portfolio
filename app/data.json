@@ -5,7 +5,9 @@
 			"title": "Nooke",
 			"number": "01",
 			"year": "2015",
+			"month": "march",
 			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
+			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
 			"date": "2014, December",
 			"role": "Conception, Development",
 			"client": "SNCF & Gobelins",
@@ -34,10 +36,12 @@
 		},
 		{
 			"url": "sncf",
-			"title": "sncf",
+			"title": "sncf transilien",
 			"number": "02",
 			"year": "2014",
+			"month": "December",
 			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
+			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
 			"date": "2014, December",
 			"role": "Conception, Development",
 			"client": "SNCF & Gobelins",
@@ -46,14 +50,14 @@
 			"sections": [
 				{
 					"title": "Home Page",
-					"image": "home-page.png"
+					"image": "home_page.png"
 				},
 				{
 					"title": "Datavisualization",
 					"image": "datavisualization.png"
 				},
 				{
-					"title": "",
+					"title": "Datavisualization",
 					"image": "datavisualization2.png"
 				},
 				{

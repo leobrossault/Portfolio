@@ -1,4 +1,10 @@
-<div class="project-page">
+<div class="project-page content-view {{urlProject}}">
+<!-- 	<div id="nav">
+		<div class="chapter-nav" id="go-intro"></div>
+		<div class="chapter-nav" id="go-infos"></div>
+		<div class="chapter-nav" id="go-screens"></div>
+	</div> -->
+
 	<section id="home-project" class="section">
 		<div class="section-container">
 			<div class="section-center">
@@ -6,19 +12,51 @@
 				<div class="name">
 					<p class="title" ng-bind="titleProject"><br/>Transilien</p>
 					<p>
-						<span class="date" ng-bind="dateProject"></span>
-						<span ng-bind="describeProject"></span>
+						<span class="date" ng-bind="yearProject"></span>
+						<span class="description" ng-bind="describeProject"></span>
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="info-project" class="section">
+	<section id="info-project" class="section isNot">
+		<div class="contain-infos">
+			<div class="col-left">
+				<div>
+					<p class="project-title-left">Creation</p>
+					<p class="project-descr-left"><span ng-bind="yearProject"></span>, <span ng-bind="monthProject"></span></p>
+				</div>
 
+				<div>
+					<p class="project-title-left">Role</p>
+					<p class="project-descr-left" ng-bind="roleProject"></p>
+				</div>
+
+				<div>
+					<p class="project-title-left">Client / Agency</p>
+					<p class="project-descr-left" ng-bind="clientProject"></p>
+				</div>
+			</div>
+
+			<div class="col-right">
+				<h2 ng-bind="titleProject"></h2>
+
+				<div class="long-descr">
+					<p>Project Infos</p>
+					<p ng-bind="longDescribeProject"></p>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<section class="screen-project" class="section">
-
+	<span id="screen-anchor"></span>
+	<section ng-repeat="screen in screensProject" class="screen-project section isNot">
+		<div>
+			<div class="contain-screen">
+				<p class="title-screen">{{screen.title}}</p>
+				<img src="../images/projects/{{urlProject}}/{{screen.image}}" class="img-screen">
+			</div>
+		</div>
 	</section>
 </div>

@@ -10,8 +10,8 @@
 angular.module('portfolioApp')
   .controller('ProjectCtrl', function ($scope, $http, $routeParams) {
 
-  	var project = $routeParams.name;
-	$http.get('data.json').success(function(data) { 
+     var project = $routeParams.name;
+	   $http.get('data.json').success(function(data) { 
     	for (var i = 0; i < data.projects.length; i ++) {
     		if (data.projects[i].url == project) {
           $scope.urlProject = data.projects[i].url;
@@ -25,7 +25,22 @@ angular.module('portfolioApp')
           $scope.clientProject = data.projects[i].client;
           $scope.screensProject = data.projects[i].sections;
           $scope.navProject = data.projects[i];
+          $scope.prevProject = data.projects[i].prev;
+          $scope.nextProject = data.projects[i].next;
     		}
     	}
     });
+
+    $scope.prev = function() {
+      $('.contain-view').scrollTop(0);
+    }
+
+    $scope.next = function() {
+      $('.contain-view').scrollTop(0);
+    }
+
+    $scope.nav = function (e, i) {
+      var wHeight = window.innerHeight;
+      $('.contain-view').animate({scrollTop :i * wHeight}, 500);
+    }
   });

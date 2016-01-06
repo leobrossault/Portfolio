@@ -229,7 +229,7 @@ body,
 
 			#menu li {
 				list-style-type: none;
-				height: calc(100%/7);
+				height: calc(100%/6);
 				width: 100%;
 				display: table;
 			}

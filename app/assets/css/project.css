@@ -31,21 +31,85 @@ section {
 	}
 
 	#nav {
-		position: absolute;
+		position: fixed;
 		right: 10%;
-		top: 30%;
+		top: 0%;
 		z-index: 999;
+		height: 100%;
+		display: flex;
+		align-items: center;
 	}
 
 		#nav div {
-			display: block;
-			width: 1rem;
-			height: 1rem;
-			border-radius: 100%;
-			background: #fff;
-			margin-bottom: 1rem;
-			cursor: pointer;
+			position: relative;
 		}
+
+		#nav div > div {
+			display: block;
+			width: 11px;
+			height: 11px;
+			margin-bottom: 3rem;
+			cursor: pointer;
+			position: relative;
+			z-index: 10;
+			border-radius: 100%;
+			border: 1px solid #e8d6d9;
+		}
+			#nav div > div::before {
+				content: "";
+				position: absolute;
+				width: 13px;
+				height: 13px;
+				border-radius: 100%;
+				transform: scale(0);
+				background: #e8d6d9;
+				top: -1px;
+				left: -1px;
+				transition: all 0.4s ease-in-out;
+				z-index: -1;
+			}
+
+			#nav div > div::after {
+				content: "";
+				position: absolute;	
+				width: 11px;
+				height: 11px;
+				border-radius: 100%;
+				z-index: 5;
+				top: 0;
+				left: 0;		
+			}
+
+			#nav div > div:last-child {
+				margin: 0;
+			}
+			
+			/* SNCF DEFAULT */
+			#nav div > div.active::after {background: #65224B;}
+			#nav div > div.active::before {
+				transform: scale(1.2);
+			}
+
+		#nav div > span {
+			position: absolute;
+			width: 0.2rem;
+			height: 3rem;
+			background: #e8d6d9;
+			left: 0.5rem;
+			max-height: 0;
+			z-index: 1;
+		}
+
+		#nav div .chapter-nav:first-child + span {
+			top: 1.6rem;		
+		}
+
+		#nav div .chapter-nav:first-child + span + div + span {
+			top: 5.8rem;
+		}
+/*
+		.sncf #nav div > div {border: 1px solid #65224B;}
+			.sncf #nav div > div:hover {border: 1px solid #fff; background: #65224B;}*/
 
 	#home-project .number {
 		font-size: 20rem;
@@ -275,6 +339,81 @@ section {
 					animation: animBottomToTop 0.8s 0.9s ease-in-out forwards;
 				}
 
+	.change-projects {
+		background: #fff;
+		padding: 5rem 20%;
+	}
+
+	.change-projects a {
+		border: 3px solid #000;
+		position: relative;
+		text-decoration: none;
+		color: #000;
+		padding: 8px 10px;
+		text-transform: uppercase;
+		transition: all 0.4s ease-in-out;
+		z-index: 10;
+		width: 6rem;
+		display: block;
+		text-align: center;
+	}
+
+	.change-projects a:first-child {
+		float: left;
+	}
+
+	.change-projects a:last-child {
+		float: right;
+	}
+
+		.change-projects a span {
+			position: relative;
+			z-index: 10;
+		}
+
+		.change-projects a::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			max-height: 0;
+			background: #000;
+			transition: all 0.4s ease-in-out;
+			z-index: 1;
+		}
+
+	.change-projects a:hover {
+		color: #fff;
+	}
+
+		.change-projects a:hover::before {
+			max-height: 100%;
+		}
+
+
+/* NOOKE */
+
+.nooke #home-project {
+	background: url('../../images/projects/nooke/nooke_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.nooke #info-project {
+	background: url('../../images/projects/nooke/nooke_section_2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;	
+}
+
+.nooke #nav div > div.active::after {
+	background: #FD6967;
+}
+
 /* SNCF */
 
 .sncf #home-project {
@@ -290,4 +429,68 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;	
+}
+
+/* ROCKET */
+
+.rocket #home-project {
+	background: url('../../images/projects/rocket/rocket_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.rocket #info-project {
+	background: #31c7dd url('../../images/projects/rocket/rocket_section_2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;	
+}
+
+.rocket #nav div > div.active::after  {
+	background: #208275;
+}
+
+/* THREE */
+
+.three #home-project {
+	background: url('../../images/projects/three/three_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.three #info-project {
+	background: url('../../images/projects/three/three_section_2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;	
+}
+
+.three #nav div > div.active::after  {
+	background: #2869CF;
+}
+
+
+/* NUT AND BOLT */
+
+.nut-and-bolt #home-project {
+	background: url('../../images/projects/nut-and-bolt/nut-and-bolt_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.nut-and-bolt #info-project {
+	background: url('../../images/projects/nut-and-bolt/nut-and-bolt_section_2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;	
+}
+
+.nut-and-bolt #nav div > div.active::after  {
+	background: #EDDA62;
 }

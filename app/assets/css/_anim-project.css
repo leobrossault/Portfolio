@@ -1,0 +1,55 @@
+@keyframes growthPage {
+	0% {
+		max-width: 0;
+	}
+	100% {
+		max-width: 100%;
+	}
+}
+
+@keyframes animLeftToRight {
+	0% {
+		opacity: 0;
+		transform: translateX(-5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes animRightToLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes animTopToBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(-5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes animBottomToTop {
+	0% {
+		opacity: 0;
+		transform: translateY(5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

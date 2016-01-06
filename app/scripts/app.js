@@ -12,6 +12,10 @@ angular
   	.module('portfolioApp', ['ngRoute', 'ngAnimate'])
   	.config(function ($routeProvider) {
     $routeProvider
+      .when('/', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+      })
       .when('/project/:name', {
         templateUrl: 'views/project.html',
         controller: 'ProjectCtrl'
@@ -25,7 +29,8 @@ angular
         controller: 'ContactCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
       });
   });
 

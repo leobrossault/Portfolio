@@ -1,9 +1,13 @@
-<div class="project-page content-view {{urlProject}}">
-<!-- 	<div id="nav">
-		<div class="chapter-nav" id="go-intro"></div>
-		<div class="chapter-nav" id="go-infos"></div>
-		<div class="chapter-nav" id="go-screens"></div>
-	</div> -->
+<div scroll class="content-view project-page {{urlProject}}">
+	<div id="nav">
+		<div>
+			<div class="chapter-nav active" data="home-project" ng-click="nav($event, 0)"></div>
+			<span class="timeline"></span>
+			<div class="chapter-nav" data="home-project" ng-click="nav($event, 1)"></div>
+			<span class="timeline"></span>
+			<div class="chapter-nav" data="info-project" ng-click="nav($event, 2)"></div>
+		</div>
+	</div>
 
 	<section id="home-project" class="section">
 		<div class="section-container">
@@ -59,4 +63,9 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="change-projects">
+		<a ng-href="#/project/{{prevProject}}" ng-click="prev()"><span>Previous</span></a>
+		<a ng-href="#/project/{{nextProject}}" ng-click="next()"><span>Next</span></a>
+	</div>
 </div>

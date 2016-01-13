@@ -32,6 +32,10 @@ angular.module('portfolioApp')
     	}
     });
 
+    if ($('body').hasClass('home')) {
+      $('body').removeClass('home');
+    }
+
     $scope.prev = function() {
       $('.contain-view').scrollTop(0);
     }

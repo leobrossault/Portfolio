@@ -40,11 +40,15 @@ $('document').ready(function () {
 
 	function homePage () {
 		setTimeout(function () {
-			body.addClass('launchAnim');
+			if (!body.hasClass('launchAnim')) {
+				body.addClass('launchAnim');
+			}
 		}, 5000);
 
 		setTimeout(function () {
-			body.addClass('isLoad');
+			if (!body.hasClass('isLoad')) {
+				body.addClass('isLoad');
+			}
 		}, 6000);
 	}
 
@@ -79,9 +83,11 @@ $('document').ready(function () {
 			btnMenu.removeClass('active');
 			btnMenu.addClass('disactive');
 
-			if ($('.content-view').hasClass('project-page')) {
-				initPage ();
-			}		
+			setTimeout(function () {
+				if ($('.content-view').hasClass('project-page')) {
+					initPage ();
+				}	
+			}, 300);	
 		});
 	}
 
@@ -107,10 +113,6 @@ $('document').ready(function () {
 		    	body.addClass('scroll');
 		    } else {
 		    	body.removeClass('scroll');
-		    }
-
-		    if (project == 1) {
-		    	// nav (scrollY);
 		    }
 		});
 	}

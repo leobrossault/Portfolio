@@ -1,0 +1,23 @@
+@media screen and (max-width: 750px) {
+	#info-project .contain-infos {
+		max-width: 100%;
+		width: 100%;
+		left: 0;
+		background: #EEF3F2;
+	}
+
+	.screen-project .contain-screen {
+		width: 90%;
+	}
+
+	.screen-project .contain-screen p {
+		float: none;
+		max-width: 100%;
+	}
+
+	.screen-project .contain-screen img {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+}

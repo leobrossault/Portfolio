@@ -27,6 +27,7 @@ angular.module('portfolioApp')
           $scope.navProject = data.projects[i];
           $scope.prevProject = data.projects[i].prev;
           $scope.nextProject = data.projects[i].next;
+          $scope.video = data.projects[i].video;
     		}
     	}
     });

@@ -1,5 +1,9 @@
-<div class="content-view">
-  <section ng-repeat="project in projects" class="screen-home-project section">
-	<p>{{project.title}}</p>
-  </section>
+<div class="content-view home-page">
+	<div ng-repeat="project in projects" class="screen-home-project section">
+		<a class="{{project.url}}" href="#/project/{{project.url}}">
+			<div class="indic-project">
+				<p>{{project.title}}</p>
+			</div>
+		</a>
+	</div>
 </div>

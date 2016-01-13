@@ -402,6 +402,12 @@ section {
 	background-position: center center;
 }
 
+.screen-home-project .nooke {
+	background: url('../../images/projects/nooke/home_nooke_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;	
+}
 
 .nooke #info-project {
 	background: url('../../images/projects/nooke/nooke_section_2.jpg');
@@ -418,6 +424,13 @@ section {
 
 .sncf #home-project {
 	background: url('../../images/projects/sncf/sncf_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.screen-home-project .sncf {
+	background: url('../../images/projects/sncf/home_sncf_section_1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -440,6 +453,14 @@ section {
 	background-position: center center;
 }
 
+.screen-home-project .rocket {
+	background: url('../../images/projects/rocket/home_rocket_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
 
 .rocket #info-project {
 	background: #31c7dd url('../../images/projects/rocket/rocket_section_2.png');
@@ -460,6 +481,14 @@ section {
 	background-size: cover;
 	background-position: center center;
 }
+
+.screen-home-project .three {
+	background: url('../../images/projects/three/home_three_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
 
 
 .three #info-project {
@@ -483,6 +512,12 @@ section {
 	background-position: center center;
 }
 
+.screen-home-project .nut-and-bolt {
+	background: url('../../images/projects/nut-and-bolt/home_nut-and-bolt_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
 
 .nut-and-bolt #info-project {
 	background: url('../../images/projects/nut-and-bolt/nut-and-bolt_section_2.jpg');
@@ -493,4 +528,47 @@ section {
 
 .nut-and-bolt #nav div > div.active::after  {
 	background: #EDDA62;
+}
+
+/* SISLEY */
+
+.sisley #home-project {
+	background: url('../../images/projects/sisley/sisley_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.screen-home-project .sisley {
+	background: url('../../images/projects/sisley/home_sisley_section_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.sisley #info-project {
+	background: #290f63;
+	position: relative;
+}
+	.sisley #info-project::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 50%;
+		max-width: 640px;
+		background: url('../../images/projects/sisley/sisley_section_2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left top;	
+	}
+
+.sisley .screen-project .contain-screen img {
+	max-width: 310px;
+}
+
+.sisley #nav div > div.active::after  {
+	background: #fa2558;
 }

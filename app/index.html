@@ -15,9 +15,25 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div class="loading-page">
+      <div>
+        <span id="first-step"></span>
+        <div id="second-step">
+          <svg x="0px" y="0px" id="top-circle">
+            <path fill="#ffffff" stroke="#40DECD" stroke-width="2" stroke-miterlimit="10" d="M1,51C1,23.4,23.4,1,51,1s50,22.4,50,50"/>
+          </svg>
+          <span>LB</span>
+          <svg x="0px" y="0px" id="bot-circle">
+            <path fill="#ffffff" stroke="#40DECD" stroke-width="2" stroke-miterlimit="10" d="M1,51C1,23.4,23.4,1,51,1s50,22.4,50,50"/>
+          </svg>
+        </div>
+        <span id="third-step"></span>
+      </div>
+    </div>
+
     <div ng-app="portfolioApp" class="container clearfix">
       <div id="title">
-        <h1>Léo Brossault</h1>
+        <a href="/#/">Léo Brossault</a>
         <h2>Creative Developer</h2>
       </div>
 
@@ -41,8 +57,8 @@
 
         <div id="menu">
           <ul>
-            <li><a href="#/project/nooke"><span>Nooke</span></a></li>
-            <li><a href="#/project/sncf"><span>Sncf</span></a></li>          
+            <li><a href="#/project/sncf"><span>Sncf</span></a></li>    
+            <li><a href="#/project/nooke"><span>Nooke</span></a></li>      
             <li><a href="#/project/rocket"><span>Rocket's Word</span></a></li>
             <li><a href="#/project/three"><span>Three Workshop</span></a></li>
             <li><a href="#/project/nut-and-bolt"><span>Nut & Bold</span></a></li>

@@ -1,6 +1,41 @@
 {
 	"projects":[
 		{
+			"url": "sncf",
+			"title": "Sncf Transilien",
+			"number": "02",
+			"year": "2014",
+			"month": "December",
+			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
+			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
+			"date": "2014, December",
+			"role": "Conception, Development",
+			"client": "SNCF & Gobelins",
+			"directory": "sncf",
+			"link": "#",
+			"sections": [
+				{
+					"title": "Home Page",
+					"image": "home_page.png"
+				},
+				{
+					"title": "Datavisualization",
+					"image": "datavisualization.png"
+				},
+				{
+					"title": "Datavisualization",
+					"image": "datavisualization2.png"
+				},
+				{
+					"title": "Mobile Version",
+					"image": "mobile.png"
+				}
+			],
+			"video": "",
+			"prev": "sisley",
+			"next": "sncf"
+		},
+		{
 			"url": "nooke",
 			"title": "Nooke",
 			"number": "01",
@@ -31,41 +66,8 @@
 					"image": "interface-ipad-2.png"
 				}
 			],
-			"prev": "nut-and-bolt",
-			"next": "sncf"
-		},
-		{
-			"url": "sncf",
-			"title": "sncf transilien",
-			"number": "02",
-			"year": "2014",
-			"month": "December",
-			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"date": "2014, December",
-			"role": "Conception, Development",
-			"client": "SNCF & Gobelins",
-			"directory": "sncf",
-			"link": "#",
-			"sections": [
-				{
-					"title": "Home Page",
-					"image": "home_page.png"
-				},
-				{
-					"title": "Datavisualization",
-					"image": "datavisualization.png"
-				},
-				{
-					"title": "Datavisualization",
-					"image": "datavisualization2.png"
-				},
-				{
-					"title": "Mobile Version",
-					"image": "mobile.png"
-				}
-			],
-			"prev": "nooke",
+			"video": "nooke",
+			"prev": "sncf",
 			"next": "rocket"
 		},
 		{
@@ -95,7 +97,8 @@
 					"image": "rocket's-world-03.jpg"
 				}
 			],
-			"prev": "sncf",
+			"video": "",
+			"prev": "nooke",
 			"next": "three"
 		},
 		{
@@ -121,12 +124,13 @@
 					"image": "screen-1.jpg"
 				}
 			],
+			"video": "",
 			"prev": "nooke",
 			"next": "nut-and-bolt"
 		},
 		{
 			"url": "nut-and-bolt",
-			"title": "nut & bolt",
+			"title": "Nut & Bolt",
 			"number": "05",
 			"year": "2015",
 			"month": "January",
@@ -155,12 +159,13 @@
 					"image": "tree.jpg"
 				}
 			],
-			"prev": "",
+			"video": "",
+			"prev": "three",
 			"next": "sisley"
 		},
 		{
 			"url": "sisley",
-			"title": "sisley",
+			"title": "Sisley",
 			"number": "06",
 			"year": "2016",
 			"month": "January",
@@ -173,24 +178,29 @@
 			"link": "#",
 			"sections": [
 				{
-					"title": "Personnage",
-					"image": "personnage.jpg"
+					"title": "Mix Center",
+					"image": "mixcenter_1.jpg"
 				},
 				{
-					"title": "Weapon",
-					"image": "machinegun.jpg"
+					"title": "Video",
+					"image": "video_1.jpg"
 				},
 				{
-					"title": "Turret",
-					"image": "turret.jpg"
+					"title": "Product",
+					"image": "product_1.jpg"
 				},
 				{
-					"title": "Stage",
-					"image": "tree.jpg"
+					"title": "Home",
+					"image": "home.jpg"
+				},
+				{
+					"title": "Store Locator",
+					"image": "map.jpg"
 				}
 			],
-			"prev": "",
-			"next": "nooke"
+			"video": "sisley",
+			"prev": "nut-and-bolt",
+			"next": "sncf"
 		}
 	]
 }

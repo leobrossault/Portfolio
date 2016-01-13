@@ -54,18 +54,23 @@ body,
 		top: 0;
 		left: 0;
 		width: 100%;
+		color: #000;
+		text-decoration: none;
 		box-sizing: border-box;
 	}
 
-	#title h1,
+	#title a,
 	#title h2 {
 		margin: 0;
 		text-transform: uppercase;
 	}
 
-	#title h1 {
+	#title a {
 		float: left;
 		font-size: 2rem;
+		color: #000;
+		text-decoration: none;
+		font-weight: 700;
 	}
 
 	#title h2 {
@@ -255,7 +260,7 @@ body,
 							position: absolute;
 							top: 20px;
 							left: -10%;
-							height: 3px;
+							height: 6px;
 							width: 120%;
 							max-width: 0;
 							background: #fff;
@@ -266,3 +271,229 @@ body,
 				#menu li a.active span::before {
 					max-width: 120%;
 				}
+
+
+/* HOME */
+
+.ng-scope.screen-home-project {
+	float: left;
+	width: calc(100% / 6);
+	opacity: 0;
+}
+
+
+.launchAnim .ng-scope.screen-home-project:nth-child(even) {
+	animation: comeProjects 0.8s ease-in-out forwards;
+}
+
+.launchAnim .ng-scope.screen-home-project:nth-child(odd) {
+	animation: comeProjectsBis 0.8s ease-in-out forwards;	
+}
+
+.screen-home-project > a {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: block;
+	text-decoration: none;
+}
+
+	.screen-home-project > a::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		max-height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+		transition: all 0.6s ease-in-out;
+	}
+
+	.screen-home-project:nth-child(even) > a::before  {
+		top: 0;
+	}
+
+	.screen-home-project:nth-child(odd) > a::before  {
+		bottom: 0;
+	}
+
+	.screen-home-project > a:hover::before {
+		max-height: 0%;
+	}
+
+	.screen-home-project > a > div {
+		width: 100%;
+		height: 50px;
+		position: absolute;
+		bottom: 0;
+		transform: translateY(50px);
+		opacity: 0;
+		transition: all 0.4s 0.6s ease-in-out;
+	}
+
+		.screen-home-project > a:hover > div {
+			transform: translateY(0);
+			opacity: 1;
+		} 
+
+	.screen-home-project a.nooke .indic-project {
+		background: #FD6967;
+	}
+
+	.screen-home-project a.sncf .indic-project {
+		background: #65224B;
+	}
+
+	.screen-home-project a.rocket .indic-project {
+		background: #208275;
+	}
+
+	.screen-home-project a.three .indic-project {
+		background: #2869CF;
+	}
+
+	.screen-home-project a.nut-and-bolt .indic-project {
+		background: #EDDA62;
+	}
+
+	.screen-home-project a.sisley .indic-project {
+		background: #fa2558;
+	}
+
+/*	.screen-home-project a:nth-child(even) > div {
+		top: 0;
+	}
+
+	.screen-home-project a:nth-child(odd) > div {
+		bottom: 0;
+	}*/
+
+	.screen-home-project > a p {
+		margin: 0;
+		color: #fff;
+		text-align: center;
+		display: block;
+		vertical-align: middle;
+		font-size: 15px;
+		line-height: 50px;
+	}
+
+
+	/* LOADING PAGE */
+
+	.isLoad .loading-page {
+		display: none;
+	}
+
+	.loading-page {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		/*background: #fff;*/
+		top: 0;
+		left: 0;
+		z-index: 9;
+		align-items: center;
+		display: flex;
+	}
+
+		.loading-page > div {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			font-size: 40px;
+		}
+
+		.loading-page::before,
+		.loading-page::after {
+			content: "";
+			position: absolute;
+			background: #fff;
+			width: 100%;
+			height: 50%;
+			left: 0;
+			z-index: 1;
+		}
+
+		.loading-page::after {
+			bottom: 0;
+		}
+
+		.loading-page::before {
+			top: 0;
+		}
+
+		.loading-page div > div {
+			width: 102px;
+			height: 102px;
+			/*max-width: 0;*/
+			position: relative;
+			z-index: 10;
+		}
+			.loading-page div > div svg {
+				width: 102px;
+				height: 50px;
+				stroke-width: 3;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                position: relative;
+                z-index: 10;
+                animation: dash 2s 2s ease-in-out forwards;
+			}
+
+			.loading-page div > div span {
+			    position: relative;
+			    z-index: 20;
+			    font-weight: 700;
+			    font-size: 50px;
+			    top: 17px;
+			    opacity: 0;
+			    color: #40DECD;
+			}
+
+			.loading-page div > div #top-circle {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			.loading-page div > div #bot-circle {
+				position: absolute;
+				left: 0;
+				bottom: 2px;
+				transform: rotate(180deg);
+			}
+
+		.loading-page > div > span {
+			height: 2px;
+			position: relative;
+			width: calc(50% - 50px);
+			background: #40DECD;
+			max-width: 0;
+			z-index: 10;
+		}
+
+		.loading-page #first-step {
+			animation: loadingSpan 2s ease-in-out forwards;
+		}
+
+		.loading-page div > div span {
+			animation: secondStepSpan 0.5s 3s ease-in-out forwards;
+		}
+
+		.loading-page #third-step {
+			animation: loadingSpan 2s 3s ease-in-out forwards;
+		}
+
+		.loading-page::before {
+			animation: leaveTopLoading 1s 5s ease-in-out forwards;
+		}
+
+		.loading-page::after {
+			animation: leaveBotLoading 1s 5s ease-in-out forwards;
+		}
+
+		.loading-page > div {
+			animation: hideLoading 1s 5s ease-in-out forwards;
+		}

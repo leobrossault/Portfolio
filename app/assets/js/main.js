@@ -27,7 +27,6 @@ $('document').ready(function () {
 	$('.contain-view').scroll(timeline);
 
 	/* INITS */
-	
 
 	setTimeout(function () {
 		if ($('.content-view').hasClass('project-page')) {
@@ -35,8 +34,20 @@ $('document').ready(function () {
 		}
 	}, 100);
 
-
+	homePage ();
+	
 	/* FUNCTIONS */
+
+	function homePage () {
+		setTimeout(function () {
+			body.addClass('launchAnim');
+		}, 5000);
+
+		setTimeout(function () {
+			body.addClass('isLoad');
+		}, 6000);
+	}
+
 	function showMenu () {
 		var menu = $('#menu'),
 			liMenu = $('#menu li'),

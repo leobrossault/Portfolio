@@ -69,3 +69,80 @@
 	transform: translate(0, 0) rotate(0deg);
   }
 }
+
+/* ANIM HOME */
+
+@keyframes comeProjects {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes comeProjectsBis {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+/* LOADING ANIMATION */
+
+@keyframes loadingSpan {
+    0% {
+      max-width: 0%;
+    }
+    100% {
+      max-width: 50%;
+    }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes secondStepSpan {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes leaveTopLoading {
+  0% {
+
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes leaveBotLoading {
+  0% {
+
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes hideLoading {
+  0% {
+
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}

@@ -36,6 +36,19 @@ angular.module('portfolioApp')
       $('body').removeClass('home');
     }
 
+    console.log($('.project-page'));
+    if ($('.content-view').hasClass('project-page')) {
+      $('.contain-view').scroll(function (event) {
+          var scrollY = $(this).scrollTop();
+          
+          if (scrollY != 0) {
+            $('body').addClass('scroll');
+          } else {
+            $('body').removeClass('scroll');
+          }
+      });
+    }
+
     $scope.prev = function() {
       $('.contain-view').scrollTop(0);
     }

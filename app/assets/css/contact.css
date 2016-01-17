@@ -1,3 +1,5 @@
+
+
 .contact .bg-all-page div {
 	display: none;
 }
@@ -28,11 +30,25 @@
 	.contact-page > .left {
 		color: #fff;
 		width: 60%;
+		position: relative;
+		left: -30px;
+		opacity: 0;
 	}
 
 	.contact-page > .right {
 		width: 40%;
 		color: #fff;
+		position: relative;
+		left: 30px;
+		opacity: 0;
+	}
+
+	.contact .contact-page > .left {
+		animation: leftToRight 2s ease-in-out forwards;
+	}
+
+	.contact .contact-page > .right {
+		animation: rightToLeft 2s ease-in-out forwards;
 	}
 
 	.contact-page > .left h3 {

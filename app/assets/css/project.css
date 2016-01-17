@@ -11,6 +11,18 @@ section {
 	animation: growthPage 0.4s ease-in-out forwards;
 }
 
+.ng-enter {
+	animation: ngAnimEnter 0.4s ease-in-out forwards;
+}
+
+.ng-leave {
+	animation: ngAnimLeave 0.4s ease-in-out forwards;
+} 
+
+.ng-leave .project-page {
+	animation: unGrowthPage 0.4s ease-in-out forwards;
+}
+
 section {
 	height: 100%;
 	width: 100%;

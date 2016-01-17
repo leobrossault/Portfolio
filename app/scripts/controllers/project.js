@@ -10,6 +10,8 @@
 angular.module('portfolioApp')
   .controller('ProjectCtrl', function ($scope, $http, $routeParams) {
 
+    $scope.pageClass = 'page-project';
+
      var project = $routeParams.name;
 	   $http.get('data.json').success(function(data) { 
     	for (var i = 0; i < data.projects.length; i ++) {
@@ -39,8 +41,12 @@ angular.module('portfolioApp')
     }
 
     // Change button 'Say Hello'
-    $('#btn-hello').attr('href', '#/contact');
-    $('#btn-hello span').text('Say Hello');
+    var btnHello = $('#btn-hello');
+    btnHello.attr('href', '#/contact');
+    btnHello.find($('span')).text('Say Hello');
+    btnHello.click(function () {
+      $('project-page').addClass('leave');
+    });
 
     if ($('.content-view').hasClass('project-page')) {
       $('.contain-view').scroll(function (event) {

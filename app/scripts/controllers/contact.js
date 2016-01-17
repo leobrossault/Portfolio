@@ -9,6 +9,8 @@
  */
 angular.module('portfolioApp')
   .controller('ContactCtrl', function ($scope, $http) {
+  	$scope.pageClass = 'page-contact';
+
   	if ($('.content-view').hasClass('contact-page')) {
   		$('body').addClass('contact');
   	}

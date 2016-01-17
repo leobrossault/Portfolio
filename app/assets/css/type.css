@@ -39,6 +39,10 @@ body {
 .right {
 	float: right;
 }
+
+.ng-enter { z-index: 8888; }
+.ng-leave { z-index: 9999; }
+
 /* TYPE */
 
 html {

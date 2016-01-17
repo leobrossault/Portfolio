@@ -6,6 +6,8 @@ angular.module('portfolioApp')
     	$scope.projects = data.projects;
     });
 
+    $scope.pageClass = 'page-home';
+
     // Change button 'Say Hello'
     $('#btn-hello').attr('href', '#/contact');
     $('#btn-hello span').text('Say Hello');

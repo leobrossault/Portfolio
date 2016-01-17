@@ -1,9 +1,39 @@
+@keyframes ngAnimEnter {
+	0% {
+
+	}
+
+	100% {
+
+	}
+}
+
+@keyframes ngAnimLeave {
+	0% {
+
+	}
+
+	100% {
+
+	}
+}
+
+
 @keyframes growthPage {
 	0% {
 		max-width: 0;
 	}
 	100% {
 		max-width: 100%;
+	}
+}
+
+@keyframes unGrowthPage {
+	0% {
+		max-width: 100%;
+	}
+	100% {
+		max-width: 0;
 	}
 }
 

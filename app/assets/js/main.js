@@ -26,6 +26,9 @@ $('document').ready(function () {
 	$('.contain-view').scroll(isInViewport);
 	$('.contain-view').scroll(timeline);
 
+	// Particle bg
+  	particlesJS.load('particles-js', 'scripts/lib/particles/particles.json', function() {});
+
 	/* INITS */
 
 	setTimeout(function () {

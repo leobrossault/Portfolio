@@ -1,0 +1,237 @@
+.contact .bg-all-page div {
+	display: none;
+}
+
+	.contact-page #particles-js {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.contact-page > div {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		position: relative;
+		z-index: 5;
+	}
+
+		.contact-page > div > div {
+			box-sizing: border-box;
+			padding: 0 10%;
+			width: 100%;
+		}
+
+	
+	.contact-page > .left {
+		color: #fff;
+		width: 60%;
+	}
+
+	.contact-page > .right {
+		width: 40%;
+		color: #fff;
+	}
+
+	.contact-page > .left h3 {
+		text-align: right;
+		font-size: 50px;
+		line-height: 52px;
+		margin: 0;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.contact-page > .left h3 + p {
+		text-align: right;
+		font-size: 14px;
+		font-weight: 100;
+	}
+
+	.contact-page > .left .coordonate {
+		margin-top: 20px;
+		max-width: 400px;
+		float: right;
+		width: 100%;
+	}
+
+		.contact-page > .left .coordonate > div {
+			border-top: 1px solid #fff;
+			padding-top: 5px;
+			text-align: right;
+			padding-left: 10px;
+		}
+
+			.contact-page > .left .coordonate > div p,
+			.contact-page > .left .coordonate > div a {
+				margin-top: 0;
+				margin-bottom: 5px;
+				color: #fff;
+				text-decoration: none;
+				font-size: 12px;
+				font-weight: 100;
+				display: block;
+			}
+
+	.contact-page > .right .input-text,
+	.contact-page > .right .text-area {
+		position: relative;
+		width: 100%;
+		height: 35px;
+		margin-bottom: 15px;
+		overflow: hidden;
+	}
+
+		.contact-page > .right .input-text::before,
+		.contact-page > .right .text-area::before,
+		.contact-page > .right .input-text::after,
+		.contact-page > .right .text-area::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background: #fff;
+		}
+
+		.contact-page > .right .input-text::after,
+		.contact-page > .right .text-area::after {
+			max-width: 0;
+			left: inherit;
+			right: 0;
+			background: #061729;
+			transition: all 0.6s ease-in-out;
+		}
+
+		.contact-page > .right .input-text.focus::after,
+		.contact-page > .right .text-area.focus::after {
+			max-width: 100%;
+		}
+
+	.contact-page > .right .text-area {
+		height: 200px;
+	}
+
+		.contact-page > .right input[type="text"],
+		.contact-page > .right input[type="email"],
+		.contact-page > .right textarea {
+			border: none;
+			background: none;
+			outline: none;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			left: 0;
+			height: 100%;
+			resize: none;
+			box-sizing: border-box;
+			font-style: italic;
+			font-family: 'Times';
+			font-size: 16px;
+			color: #fff;
+			transition: color 0.4s ease-in-out;
+		}
+
+			.contact-page > .right .focus input[type="text"],
+			.contact-page > .right .focus input[type="email"],
+			.contact-page > .right .focus textarea {
+				color: #031927;
+			}
+
+		.contact-page > .right label {
+			position: absolute;
+			top: 8px;
+			font-style: italic;
+			font-family: 'Times';
+			font-size: 16px;
+			transition: all 0.4s ease-in-out;
+		}
+
+			.contact-page > .right .focus label {
+				transform: translateY(30px);
+			}
+
+			.contact-page > .right .filled label,
+			.contact-page > .right .focus.filled label {
+				transform: translateY(30px);
+			}
+
+			.contact-page > .right .focus.text-area label {
+				transform: translateY(230px);
+			}
+
+			.contact-page > .right .filled.text-area label,
+			.contact-page > .right .focus.filled.text-area label {
+				transform: translateY(230px);
+			}
+
+		.contact-page > .right input[type="submit"] {
+			border: 2px solid #fff;
+			width: 120px;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 8px 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			background: none;
+			color: #fff;
+			font-size: 11px;
+			font-weight: 600;
+			display: block;
+			margin: auto;
+			margin-top: 15px;
+			transition: all 0.4s ease-in-out;
+		}
+
+			.contact-page > .right input[type="submit"]:hover {
+				background: #fff;
+				color: #40decd;
+			}
+
+.error-form {
+	display: none;
+}
+
+	.form-error-server .error-form {
+		display: block;
+	}
+
+form {
+	position: relative;
+	z-index: 10;
+	transition: all 0.4s ease-in-out;
+}
+
+	.form-success form {
+		transform: translateY(-1000px);
+	}
+
+.success-msg {
+	text-align: center;
+	position: absolute;
+    top: calc(50%);
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 5;
+    transition: all 0.4s ease-in-out;
+}
+
+	.form-success .success-msg {
+		top: calc(50% - 50px);
+		opacity: 1;
+	}
+	
+	.success-msg p {
+		font-size: 15px;
+		font-weight: 100;
+	}
+
+	.success-msg span {
+		font-size: 35px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}

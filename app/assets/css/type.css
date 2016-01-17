@@ -32,6 +32,13 @@ body {
     *zoom: 1;
 }
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
 /* TYPE */
 
 html {
@@ -98,7 +105,7 @@ body,
 	}
 
 	/* BG PAGES */
-	#bg-all-page {
+	.bg-all-page {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -109,12 +116,23 @@ body,
 		z-index: 1;
 	}
 
-		#bg-all-page > div {
+		.bg-all-page > div {
 			display: table-cell;
 			vertical-align: middle;
+			position: relative;
+			z-index: 5;
 		}
 
-		#bg-all-page > div p {
+		.bg-all-page canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+
+		.bg-all-page > div p {
 			font-size: 22rem;
 			text-align: center;
 			margin: 0;

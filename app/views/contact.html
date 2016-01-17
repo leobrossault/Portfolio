@@ -1,1 +1,49 @@
-<p>This is the contact view.</p>
+<div class="content-view contact-page clearfix">
+	<div class="left">
+		<div>
+			<h3>Say <br>Hello !</h3>
+			<p>If you want to collaborate on crafting amazing experience for people, you are very welcome to contact me</p>
+
+			<div class="clearfix coordonate">
+				<div class="left">
+					<a href="mailto:brossault.leo@gmail.com">brossault.leo@gmail.com</a>
+					<p>06 68 89 98 42</p>
+				</div>
+
+				<div class="right">
+					<p>12 rue Marguerite Duras</p>
+					<p>94400 Vitry-sur-Seine</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="right">
+		<div>
+			<form method="post" ng-submit="submit(contactform)" name="contactform" role="form">
+				<div class="input-text">
+					<label for="name">Name</label>
+					<input type="text" name="name" ng-model="formData.name">
+				</div>
+
+				<div class="input-text">
+					<label for="mail">Email</label>
+					<input type="email" name="mail" ng-model="formData.mail">
+				</div>
+
+				<div class="text-area">
+					<label for="message">Message</label>
+					<textarea name="message" ng-model="formData.message"></textarea>
+				</div>
+
+				<input value="Send" type="submit">
+
+				<p class="error-form">Sorry, your message could not be sent. Please, try later.</p>
+			</form>
+
+			<div class="success-msg">
+				<p><span>Thanks !</span><br>I will answer you as soon as possible.</p>
+			</div>
+		</div>
+	</div>
+</div>

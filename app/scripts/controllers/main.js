@@ -6,7 +6,15 @@ angular.module('portfolioApp')
     	$scope.projects = data.projects;
     });
 
-	if ($('.content-view').hasClass('home-page')) {
-		$('body').addClass('home');
-	}
+    // Change button 'Say Hello'
+    $('#btn-hello').attr('href', '#/contact');
+    $('#btn-hello span').text('Say Hello');
+
+    if ($('body').hasClass('contact')) {
+      $('body').removeClass('contact');
+    }
+
+  	if ($('.content-view').hasClass('home-page')) {
+  		$('body').addClass('home');
+  	}
   });

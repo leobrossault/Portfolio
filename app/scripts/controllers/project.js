@@ -34,9 +34,14 @@ angular.module('portfolioApp')
 
     if ($('body').hasClass('home')) {
       $('body').removeClass('home');
+    } else if ($('body').hasClass('contact')) {
+      $('body').removeClass('contact');
     }
 
-    console.log($('.project-page'));
+    // Change button 'Say Hello'
+    $('#btn-hello').attr('href', '#/contact');
+    $('#btn-hello span').text('Say Hello');
+
     if ($('.content-view').hasClass('project-page')) {
       $('.contain-view').scroll(function (event) {
           var scrollY = $(this).scrollTop();

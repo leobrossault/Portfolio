@@ -92,6 +92,26 @@
     }
 }
 
+@keyframes backProjects {
+    0% {
+      /*opacity: 1;*/
+    }
+    100% {
+      /*transform: translateY(0%);*/
+      /*opacity: 0;*/
+    }
+}
+
+@keyframes backProjectsBis {
+    0% {
+      /*opacity: 1;*/
+    }
+    100% {
+      /*transform: translateY(0%);*/
+      /*opacity: 0;*/
+    }
+}
+
 /* LOADING ANIMATION */
 
 @keyframes loadingSpan {
@@ -174,5 +194,25 @@
   100% {
     transform: translateX(-30px);
     opacity: 1;
+  }
+}
+
+@keyframes leftToRightBack {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+}
+
+@keyframes rightToLeftBack {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-30px);
+    opacity: 0;
   }
 }

@@ -15,6 +15,10 @@ angular.module('portfolioApp')
   		$('body').addClass('contact');
   	}
 
+  	if ($('body').hasClass('home')) {
+      $('body').removeClass('home');
+    }
+
   	// Change button 'Say Hello'
   	$('#btn-hello').attr('href', '#/');
   	$('#btn-hello span').text('Home');

@@ -7,20 +7,12 @@ section {
 	width: 100%;
 }
 
-.project-page {
-	animation: growthPage 0.4s ease-in-out forwards;
+.ng-enter .project-page {
+	animation: growthPage 1s ease-in-out forwards;
 }
-
-.ng-enter {
-	animation: ngAnimEnter 0.4s ease-in-out forwards;
-}
-
-.ng-leave {
-	animation: ngAnimLeave 0.4s ease-in-out forwards;
-} 
 
 .ng-leave .project-page {
-	animation: unGrowthPage 0.4s ease-in-out forwards;
+	animation: unGrowthPage 1s ease-in-out forwards;
 }
 
 section {

@@ -44,11 +44,19 @@
 	}
 
 	.contact .contact-page > .left {
-		animation: leftToRight 2s ease-in-out forwards;
+		animation: leftToRight 1s ease-in-out forwards;
 	}
 
 	.contact .contact-page > .right {
-		animation: rightToLeft 2s ease-in-out forwards;
+		animation: rightToLeft 1s ease-in-out forwards;
+	}
+
+	.ng-leave .contact-page > .left {
+		animation: rightToLeftBack 0.4s ease-in-out forwards;
+	}
+
+	.ng-leave .contact-page > .right {
+		animation: leftToRightBack 0.4s ease-in-out forwards;
 	}
 
 	.contact-page > .left h3 {

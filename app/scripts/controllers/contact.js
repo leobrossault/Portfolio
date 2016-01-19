@@ -11,12 +11,17 @@ angular.module('portfolioApp')
   .controller('ContactCtrl', function ($scope, $http) {
   	$scope.pageClass = 'page-contact';
 
+  	setTimeout(function () {
+      $('body').addClass('leave-home');
+    }, 500);
+
   	if ($('.content-view').hasClass('contact-page')) {
   		$('body').addClass('contact');
   	}
 
   	if ($('body').hasClass('home')) {
       $('body').removeClass('home');
+      $('body').removeClass('home-anim');
     }
 
   	// Change button 'Say Hello'

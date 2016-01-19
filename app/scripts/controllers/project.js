@@ -36,9 +36,14 @@ angular.module('portfolioApp')
 
     if ($('body').hasClass('home')) {
       $('body').removeClass('home');
+      $('body').removeClass('home-anim');
     } else if ($('body').hasClass('contact')) {
       $('body').removeClass('contact');
     }
+
+    setTimeout(function () {
+      $('body').addClass('leave-home');
+    }, 500);
 
     // Change button 'Say Hello'
     var btnHello = $('#btn-hello');

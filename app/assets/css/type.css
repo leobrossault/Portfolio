@@ -41,11 +41,11 @@ body {
 }
 
 .ng-enter {
-	animation: ngAnimEnter 2s ease-in-out forwards;
+	animation: ngAnimEnter 1.5s ease-in-out forwards;
 }
 
 .ng-leave {
-	animation: ngAnimLeave 100s ease-in-out forwards;
+	animation: ngAnimLeave 0.6s ease-in-out forwards;
 }
 
 /* TYPE */
@@ -79,13 +79,12 @@ body,
 		box-sizing: border-box;
 	}
 
-	#title a,
-	#title h2 {
+	#title a {
 		margin: 0;
 		text-transform: uppercase;
 	}
 
-	#title a {
+	#title a:first-child {
 		float: left;
 		font-size: 2rem;
 		color: #000;
@@ -93,9 +92,12 @@ body,
 		font-weight: 700;
 	}
 
-	#title h2 {
+	#title a:first-child + a {
 		float: right;
 		font-size: 2rem;
+		color: #000;
+		text-decoration: none;
+		font-weight: 700;
 	}
 
 	.content {
@@ -317,23 +319,60 @@ body,
 	opacity: 0;
 }
 
+/* EVEN */
+
+.ng-scope.screen-home-project:nth-child(even) {
+	transition: transform 0.8s ease-in-out;
+	position: relative;
+	top: -50%;
+}
 
 .launchAnim .ng-scope.screen-home-project:nth-child(even) {
-	animation: comeProjects 0.8s ease-in-out forwards;
-	transition: transform 0.4s ease-in-out;
+	transform: translateY(50%);
+	opacity: 1;
+}
+
+.launchAnim.leave-home .ng-scope.screen-home-project:nth-child(even) {
+	top: -100%;
+	transform: translateY(0);
+	transition: transform 0.8s ease-in-out;
+}
+
+.launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(even) {
+	transform: translateY(100%);
+}
+
+/* ODD */
+
+.ng-scope.screen-home-project:nth-child(odd) {
+	transition: transform 0.8s ease-in-out;	
+	position: relative;
+	top: 100%;
 }
 
 .launchAnim .ng-scope.screen-home-project:nth-child(odd) {
-	animation: comeProjectsBis 0.8s ease-in-out forwards;
-	transition: transform 0.4s ease-in-out;	
+	transform: translateY(-100%);
+	opacity: 1;
 }
 
+.launchAnim.leave-home .ng-scope.screen-home-project:nth-child(odd) {
+	top: 100%;
+	transform: translateY(0);
+	transition: transform 0.8s ease-in-out;
+}
+
+.launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(odd) {
+	transform: translateY(-100%);
+}
+
+/* LEAVE */
+
 .ng-leave .ng-scope.screen-home-project:nth-child(even) {
-	/*transform: translateY(50%) !important;*/
+	transform: translateY(-50%);
 }
 
 .ng-leave .ng-scope.screen-home-project:nth-child(odd) {
-	/*transform: translateY(150%) !important;*/
+	transform: translateY(50%);
 }
 
 .screen-home-project > a {

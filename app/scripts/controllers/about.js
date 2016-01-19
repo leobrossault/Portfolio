@@ -9,9 +9,16 @@
  */
 angular.module('portfolioApp')
   .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+	setTimeout(function () {
+      $('body').addClass('leave-home');
+    }, 500);
+
+  	if ($('.content-view').hasClass('about-page')) {
+  		$('body').addClass('about');
+  	}
+
+  	if ($('body').hasClass('home')) {
+      $('body').removeClass('home');
+      $('body').removeClass('home-anim');
+    }
   });

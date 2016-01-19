@@ -12,6 +12,12 @@ angular.module('portfolioApp')
     $('#btn-hello').attr('href', '#/contact');
     $('#btn-hello span').text('Say Hello');
 
+    setTimeout(function () {
+      $('body').addClass('home-anim');
+    }, 500);
+
+    // $('body').removeClass('leave-home');
+
     if ($('body').hasClass('contact')) {
       $('body').removeClass('contact');
     }

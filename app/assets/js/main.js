@@ -182,37 +182,39 @@ $('document').ready(function () {
 		var nav = $('.chapter-nav:first-child + span'),
 			distSection;
 
-		if ($('#home-project').offset().top < 0) {
-			if (step == 1) {
-				distSection = hWindow - (hWindow + $('#home-project').offset().top);
-				if (distSection / ratioTimeline < 25) {
-					nav.css({'max-height': (distSection / ratioTimeline)});
-				} else {
-					nav.css({'max-height': '25px'});
-				}
+		if ($('#home-project').length > 0) {
+			if ($('#home-project').offset().top < 0) {
+				if (step == 1) {
+					distSection = hWindow - (hWindow + $('#home-project').offset().top);
+					if (distSection / ratioTimeline < 25) {
+						nav.css({'max-height': (distSection / ratioTimeline)});
+					} else {
+						nav.css({'max-height': '25px'});
+					}
 
-				$('.chapter-nav:first-child + span + div + span').css({
-					'max-height': 0
-				});
-			} else if (step == 2) {
-				nav = $('.chapter-nav:first-child + span + div + span');
-				distSection = hWindow - (hWindow + $('#info-project').offset().top);
-				if (distSection / ratioTimeline < 25) {
-					nav.css({'max-height': (distSection / ratioTimeline)});
+					$('.chapter-nav:first-child + span + div + span').css({
+						'max-height': 0
+					});
+				} else if (step == 2) {
+					nav = $('.chapter-nav:first-child + span + div + span');
+					distSection = hWindow - (hWindow + $('#info-project').offset().top);
+					if (distSection / ratioTimeline < 25) {
+						nav.css({'max-height': (distSection / ratioTimeline)});
+					} else {
+						nav.css({'max-height': '25px'});
+					}
 				} else {
-					nav.css({'max-height': '25px'});
+					$('.chapter-nav:first-child + span').css({
+						'max-height': '24.5px'
+					});
+
+					$('.chapter-nav:first-child + span + div + span').css({
+						'max-height': '24.5px'
+					});
 				}
 			} else {
-				$('.chapter-nav:first-child + span').css({
-					'max-height': '24.5px'
-				});
-
-				$('.chapter-nav:first-child + span + div + span').css({
-					'max-height': '24.5px'
-				});
+				nav.css({'max-height': 0});
 			}
-		} else {
-			nav.css({'max-height': 0});
 		}
 	}
 });

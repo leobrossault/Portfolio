@@ -9,16 +9,28 @@
  */
 angular.module('portfolioApp')
   .controller('AboutCtrl', function ($scope) {
-	setTimeout(function () {
-      $('body').addClass('leave-home');
+    var body = $('body');
+
+	  setTimeout(function () {
+      body.addClass('leave-home');
     }, 500);
 
   	if ($('.content-view').hasClass('about-page')) {
-  		$('body').addClass('about');
+  		body.addClass('about');
   	}
 
-  	if ($('body').hasClass('home')) {
-      $('body').removeClass('home');
-      $('body').removeClass('home-anim');
+  	if (body.hasClass('home')) {
+      body.removeClass('home');
+      body.removeClass('home-anim');
     }
+
+    $('.contain-view').scroll(function () {
+        var scrollY = $(this).scrollTop();
+        
+        if (scrollY != 0) {
+          body.addClass('scroll');
+        } else {
+          body.removeClass('scroll');
+        }
+    });
   });

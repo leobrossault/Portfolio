@@ -1,0 +1,70 @@
+.about-page #home-about {
+	background: url('../../images/about/bg_about.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+	.about-page #home-about::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+
+	.about-page #home-about .section-center {
+		width: 350px;
+		color: #fff;
+		position: relative;
+		z-index: 10;
+	}
+
+	.about-page #home-about .section-center p {
+		margin: 0;
+	}
+
+		.about-page #home-about .section-center .col-left {
+			float: left;
+			text-align: right;
+			text-transform: uppercase;
+			font-size: 44px;
+			letter-spacing: 0.08em;
+			line-height: 1;
+		}
+
+		.about-page #home-about .section-center .col-right {
+			float: right;
+			text-align: left;
+			position: relative;
+			top: 8px;
+			font-weight: 100;
+		}
+
+			.about-page #home-about .section-center .col-right p {
+				font-size: 17px;
+			}
+
+			.about-page #home-about .section-center .col-right .name {
+				font-style: italic;
+				font-family: 'Times';
+				position: relative;
+				padding-bottom: 4px;
+				margin-bottom: 8px;
+			}
+
+				.about-page #home-about .section-center .col-right .name::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					width: 15px;
+					height: 1px;
+					bottom: 0;
+					background: #fff;
+				}
+
+	.about-page #descr-about {
+		padding: 10%;
+		box-sizing: border-box;
+	}

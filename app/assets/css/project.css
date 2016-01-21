@@ -12,7 +12,8 @@ section {
 }
 
 .ng-leave .project-page {
-	animation: unGrowthPage 1s ease-in-out forwards;
+	animation: unGrowthPage 0.5s ease-in-out forwards;
+	overflow: hidden;
 }
 
 section {

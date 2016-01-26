@@ -22,6 +22,8 @@ angular.module('portfolioApp')
   	if ($('body').hasClass('home')) {
       $('body').removeClass('home');
       $('body').removeClass('home-anim');
+    } else if ($('body').hasClass('about')) {
+      $('body').removeClass('about');
     }
 
   	// Change button 'Say Hello'

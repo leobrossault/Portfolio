@@ -17,12 +17,18 @@ angular.module('portfolioApp')
 
   	if ($('.content-view').hasClass('about-page')) {
   		body.addClass('about');
+
+      setTimeout(function () {
+        $('.about-page').addClass('about-load');
+      }, 500);
   	}
 
   	if (body.hasClass('home')) {
       body.removeClass('home');
       body.removeClass('home-anim');
     }
+
+    equalHeight ();
 
     $('.contain-view').scroll(function () {
         var scrollY = $(this).scrollTop();
@@ -32,5 +38,15 @@ angular.module('portfolioApp')
         } else {
           body.removeClass('scroll');
         }
+
+        equalHeight ();
     });
+
+    $(window).resize(function () {
+      equalHeight ();
+    });
+
+    function equalHeight () {
+      $('#home-about .section-container').height($('.content-view').height());
+    }
   });

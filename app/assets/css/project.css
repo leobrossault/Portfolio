@@ -344,6 +344,10 @@ section {
 					animation: animBottomToTop 0.8s 0.9s ease-in-out forwards;
 				}
 
+	.video iframe {
+		display: block;
+	}
+
 	.change-projects {
 		background: #fff;
 		padding: 5rem 20%;
@@ -424,6 +428,14 @@ section {
 .nooke #nav div > div.active::after {
 	background: #FD6967;
 }
+	
+	.nooke .video {
+		height: 150%;
+	}
+
+		.nooke .video iframe {
+			height: 50%;
+		}
 
 /* SNCF */
 
@@ -576,4 +588,81 @@ section {
 
 .sisley #nav div > div.active::after  {
 	background: #fa2558;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 910px) {
+	body section .section-center {
+		width: 50%;
+	}
+
+		body #home-project .name .title,
+		body #home-project .name .title + p {
+			float: none;
+			max-width: 100%;
+		}
+}
+
+@media screen and (max-width: 680px) {
+	body section .section-center {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	body #info-project .contain-infos {
+		padding: 0 4.5rem;
+	}
+
+	body #info-project .contain-infos .col-left,
+	body #info-project .contain-infos .col-right {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+
+	body #info-project .contain-infos .col-left {
+		padding-top: 9.2rem;
+	}
+
+	#info-project .contain-infos .col-right {
+		padding-top: 3.5rem;
+	}
+		
+
+		body #info-project .contain-infos .col-left div {
+			margin-bottom: 0;
+			display: inline-block;
+			vertical-align: middle;
+			width: calc(100% / 3 - 10%);
+		}
+
+			body #info-project .contain-infos .col-left div:first-child + div {
+				margin: 0 10%;
+			}
+
+		body #info-project .contain-infos .col-left p.project-title-left {
+			font-size: 13px;
+		}
+
+		body #info-project .contain-infos .col-left p.project-descr-left {
+			font-size: 1.4rem;
+		}
+}
+
+@media screen and (max-width: 470px) {
+	body #home-project .number {
+		font-size: 13rem;
+	}
+
+	body #home-project .name .title {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	body #info-project .contain-infos .col-left {
+		display: none;
+	}
 }

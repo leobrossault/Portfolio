@@ -39,6 +39,8 @@ angular.module('portfolioApp')
       $('body').removeClass('home-anim');
     } else if ($('body').hasClass('contact')) {
       $('body').removeClass('contact');
+    } else if ($('body').hasClass('about')) {
+      $('body').removeClass('about');
     }
 
     setTimeout(function () {

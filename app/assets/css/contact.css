@@ -259,3 +259,79 @@ form {
 		font-weight: 700;
 		text-transform: uppercase;
 	}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 670px) {
+	body .contact-page > .left .coordonate > div {
+		display: block;
+		width: 100%;
+		position: relative;
+		border: none;
+		float: none;
+	}
+
+		body .contact-page > .left .coordonate > div.left {
+			margin-bottom: 15px;
+		}
+
+		body .contact-page > .left .coordonate > div::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+			max-width: 200px;
+			height: 1px;
+			background: #fff;
+		}
+}
+
+@media screen and (max-width: 750px) {
+	body .contact-page > .left,
+	body .contact-page > .right {
+		float: none;
+		height: auto;
+		width: 100%;
+		display: block;
+	}
+
+	body .contact-page > .left .coordonate {
+		display: none;
+	}
+
+	body .contact-page > .left h3,
+	body .contact-page > .left h3 + p {
+		text-align: center;
+	}
+
+	.contact .contain-view > div:first-child {
+		display: table;
+	}
+
+		body .contact-page {
+			display: table-cell;
+			vertical-align: middle;
+			height: 100%;
+		}
+}
+
+@media screen and (max-width: 500px) {
+	body .contact-page > .right .text-area {
+		height: 110px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	body .contact-page > .left h3 + p {
+		display: none;
+	}
+
+	body .contact-page > .left h3 {
+		font-size: 19px;
+	}
+
+		body .contact-page > .left h3 br {
+			display: none;
+		}
+}

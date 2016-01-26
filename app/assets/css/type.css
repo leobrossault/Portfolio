@@ -7,6 +7,7 @@ body {
 	font-family: 'effra';
 	font-size: 10px;
 	transition: all 0.6s ease-in-out;
+	background: #fff;
 	/*transition: padding-left 0.3s ease-in-out, padding-top 0.3s 0.2s ease-in-out, padding-right 0.3s 0.4s ease-in-out, padding-bottom 0.3s 0.6s ease-in-out;*/
 }
 
@@ -582,3 +583,101 @@ body,
 		.loading-page > div {
 			animation: hideLoading 1s 5s ease-in-out forwards;
 		}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+	.ng-scope.screen-home-project {
+		width: 100%;
+		float: none;
+		display: block;
+		height: calc(100% / 6);
+	}
+	
+	/* EVEN */
+
+	.ng-scope.screen-home-project:nth-child(even) {
+		left: -50%;
+		top: inherit;
+	}
+
+	.launchAnim .ng-scope.screen-home-project:nth-child(even) {
+		transform: translateX(50%);
+		opacity: 1;
+	}
+
+	.launchAnim.leave-home .ng-scope.screen-home-project:nth-child(even) {
+		left: -100%;
+		top: inherit;
+		transform: translateY(0);
+	}
+
+	.launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(even) {
+		transform: translateX(100%);
+	}
+
+	/* ODD */
+
+	.ng-scope.screen-home-project:nth-child(odd) {
+		top: inherit;
+		left: 100%;
+	}
+
+	.launchAnim .ng-scope.screen-home-project:nth-child(odd) {
+		transform: translateX(-100%);
+		opacity: 1;
+	}
+
+	.launchAnim.leave-home .ng-scope.screen-home-project:nth-child(odd) {
+		top: inherit;
+		transform: translateX(0);
+	}
+
+	.launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(odd) {
+		transform: translateX(-100%);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	body {
+		padding: 5rem 2.5rem 2.5rem;
+	}
+
+	#title {
+		padding: 1.7rem 2.5rem 0 2.5rem;
+	}
+
+		#title a:first-child,
+		#title a:first-child + a {
+			font-size: 1.5rem;
+		}
+
+	#btn-hello {
+		top: 15px;
+		right: 15px;
+	}
+
+	#btn-menu {
+		top: 15px;
+		left: 15px;
+	}
+
+	#menu li a {
+		font-size: 25px;
+	}
+
+	.bg-all-page > div p {
+		font-size: 12rem;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	#title {
+		padding: 2rem 2.5rem 0 2.5rem;
+	}
+
+		#title a:first-child,
+		#title a:first-child + a {
+			font-size: 1.2rem;
+		}	
+}

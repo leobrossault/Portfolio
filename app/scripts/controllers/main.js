@@ -20,6 +20,8 @@ angular.module('portfolioApp')
 
     if ($('body').hasClass('contact')) {
       $('body').removeClass('contact');
+    } else if ($('body').hasClass('about')) {
+      $('body').removeClass('about');
     }
 
   	if ($('.content-view').hasClass('home-page')) {

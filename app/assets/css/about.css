@@ -2,6 +2,7 @@
 .about-page #home-about {
 	position: relative;
 	display: block;
+	background: none;
 }
 
 
@@ -18,8 +19,12 @@
 			max-height: 100%;
 		}
 
-		.ng-leave.about-page #home-about > div {
+		.ng-leave .about-page #home-about > div {
 			max-height: 0;
+		}
+
+		.ng-leave .about-page.about-load #home-about .section-container::before {
+			opacity: 0;
 		}
 
 	.about-page #home-about > div > div {

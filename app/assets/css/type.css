@@ -46,7 +46,7 @@ body {
 }
 
 .ng-leave {
-	animation: ngAnimLeave 0.6s ease-in-out forwards;
+	animation: ngAnimLeave 1s ease-in-out forwards;
 }
 
 /* TYPE */
@@ -323,7 +323,7 @@ body,
 /* EVEN */
 
 .ng-scope.screen-home-project:nth-child(even) {
-	transition: transform 0.8s ease-in-out;
+	transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 	position: relative;
 	top: -50%;
 }
@@ -331,12 +331,13 @@ body,
 .launchAnim .ng-scope.screen-home-project:nth-child(even) {
 	transform: translateY(50%);
 	opacity: 1;
+	transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .launchAnim.leave-home .ng-scope.screen-home-project:nth-child(even) {
 	top: -100%;
 	transform: translateY(0);
-	transition: transform 0.8s ease-in-out;
+	transition: transform 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(even) {
@@ -346,7 +347,7 @@ body,
 /* ODD */
 
 .ng-scope.screen-home-project:nth-child(odd) {
-	transition: transform 0.8s ease-in-out;	
+	transition: transform 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);	
 	position: relative;
 	top: 100%;
 }
@@ -354,12 +355,13 @@ body,
 .launchAnim .ng-scope.screen-home-project:nth-child(odd) {
 	transform: translateY(-100%);
 	opacity: 1;
+	transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);	
 }
 
 .launchAnim.leave-home .ng-scope.screen-home-project:nth-child(odd) {
 	top: 100%;
 	transform: translateY(0);
-	transition: transform 0.8s ease-in-out;
+	transition: transform 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(odd) {
@@ -369,10 +371,22 @@ body,
 /* LEAVE */
 
 .ng-leave .ng-scope.screen-home-project:nth-child(even) {
+	transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
 	transform: translateY(-50%);
 }
 
 .ng-leave .ng-scope.screen-home-project:nth-child(odd) {
+	transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transform: translateY(50%);
+}
+
+.launchAnim.leave-home .ng-leave .ng-scope.screen-home-project:nth-child(even) {
+	transition: transform 2s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transform: translateY(-50%);
+}
+
+.launchAnim.leave-home .ng-leave .ng-scope.screen-home-project:nth-child(odd) {
+	transition: transform 2s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
 	transform: translateY(50%);
 }
 

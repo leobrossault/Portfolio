@@ -39,11 +39,11 @@ angular.module('portfolioApp')
           body.removeClass('scroll');
         }
 
-        equalHeight ();
+        // equalHeight ();
     });
 
     $(window).resize(function () {
-      equalHeight ();
+      // equalHeight ();
     });
 
     function equalHeight () {

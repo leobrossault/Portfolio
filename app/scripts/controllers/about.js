@@ -26,6 +26,10 @@ angular.module('portfolioApp')
   	if (body.hasClass('home')) {
       body.removeClass('home');
       body.removeClass('home-anim');
+    } else if (body.hasClass('contact')) {
+      body.removeClass('contact');
+    } else if (body.hasClass('project')) {
+      body.removeClass('project');
     }
 
     equalHeight ();

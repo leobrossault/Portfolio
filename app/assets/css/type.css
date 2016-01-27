@@ -43,11 +43,28 @@ body {
 
 .ng-enter {
 	animation: ngAnimEnter 1.5s ease-in-out forwards;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
 }
 
 .ng-leave {
-	animation: ngAnimLeave 1s ease-in-out forwards;
+	animation: ngAnimLeave 1.5s ease-in-out forwards;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
 }
+
+.ng-enter.active {
+	opacity: 1;
+}
+
+.ng-leave.active {
+	opacity: 1;
+}
+
 
 /* TYPE */
 
@@ -91,7 +108,12 @@ body,
 		color: #000;
 		text-decoration: none;
 		font-weight: 700;
+		transition: all 0.4s ease-in-out;
 	}
+
+		#title a:first-child:hover {
+			color: #40DECD;
+		}
 
 	#title a:first-child + a {
 		float: right;
@@ -99,7 +121,12 @@ body,
 		color: #000;
 		text-decoration: none;
 		font-weight: 700;
+		transition: all 0.4s ease-in-out;
 	}
+
+		#title a:first-child + a:hover {
+			color: #40DECD;
+		}
 
 	.content {
 		width: 100%;
@@ -317,78 +344,27 @@ body,
 .ng-scope.screen-home-project {
 	float: left;
 	width: calc(100% / 6);
-	opacity: 0;
+	/*opacity: 0;*/
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
 }
 
-/* EVEN */
-
-.ng-scope.screen-home-project:nth-child(even) {
-	transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-	position: relative;
-	top: -50%;
+.ng-enter .screen-home-project:nth-child(even) {
+	animation: comeProjects 1s ease-in-out forwards;
 }
 
-.launchAnim .ng-scope.screen-home-project:nth-child(even) {
-	transform: translateY(50%);
-	opacity: 1;
-	transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+.ng-enter .screen-home-project:nth-child(odd) {
+	animation: comeProjectsBis 1s ease-in-out forwards;
 }
 
-.launchAnim.leave-home .ng-scope.screen-home-project:nth-child(even) {
-	top: -100%;
-	transform: translateY(0);
-	transition: transform 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+.ng-leave .screen-home-project:nth-child(even) {
+	animation: backProjects 1s ease-in-out forwards;
 }
 
-.launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(even) {
-	transform: translateY(100%);
+.ng-leave .screen-home-project:nth-child(odd) {
+	animation: backProjectsBis 1s ease-in-out forwards;
 }
 
-/* ODD */
-
-.ng-scope.screen-home-project:nth-child(odd) {
-	transition: transform 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);	
-	position: relative;
-	top: 100%;
-}
-
-.launchAnim .ng-scope.screen-home-project:nth-child(odd) {
-	transform: translateY(-100%);
-	opacity: 1;
-	transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);	
-}
-
-.launchAnim.leave-home .ng-scope.screen-home-project:nth-child(odd) {
-	top: 100%;
-	transform: translateY(0);
-	transition: transform 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.launchAnim.leave-home.home-anim .ng-scope.screen-home-project:nth-child(odd) {
-	transform: translateY(-100%);
-}
-
-/* LEAVE */
-
-.ng-leave .ng-scope.screen-home-project:nth-child(even) {
-	transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
-	transform: translateY(-50%);
-}
-
-.ng-leave .ng-scope.screen-home-project:nth-child(odd) {
-	transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
-	transform: translateY(50%);
-}
-
-.launchAnim.leave-home .ng-leave .ng-scope.screen-home-project:nth-child(even) {
-	transition: transform 2s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
-	transform: translateY(-50%);
-}
-
-.launchAnim.leave-home .ng-leave .ng-scope.screen-home-project:nth-child(odd) {
-	transition: transform 2s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
-	transform: translateY(50%);
-}
 
 .screen-home-project > a {
 	height: 100%;
@@ -426,7 +402,7 @@ body,
 		height: 50px;
 		position: absolute;
 		bottom: 0;
-		transform: translateY(50px);
+		transform: translate(50px);
 		opacity: 0;
 		transition: all 0.4s 0.6s ease-in-out;
 	}

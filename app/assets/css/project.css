@@ -8,7 +8,8 @@ section {
 }
 
 .ng-enter .project-page {
-	animation: growthPage 1s 0.5s ease-in-out forwards;
+	animation: growthPage 1s ease-in-out forwards;
+	overflow: hidden;
 }
 
 .ng-leave .project-page {

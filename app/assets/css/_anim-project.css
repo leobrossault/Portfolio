@@ -1,20 +1,20 @@
 @keyframes ngAnimEnter {
 	0% {
-
+		color: #000;
 	}
 
 	100% {
-
+		color: #fff;
 	}
 }
 
 @keyframes ngAnimLeave {
 	0% {
-
+		color: #fff;
 	}
 
 	100% {
-
+		color: #000;
 	}
 }
 

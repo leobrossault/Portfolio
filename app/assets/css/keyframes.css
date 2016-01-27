@@ -75,6 +75,7 @@
 @keyframes comeProjects {
     0% {
       transform: translateY(-50%);
+      opacity: 0;
     }
     100% {
       transform: translateY(0);
@@ -85,10 +86,38 @@
 @keyframes comeProjectsBis {
     0% {
       transform: translateY(150%);
+      opacity: 0;
     }
     100% {
       transform: translateY(0);
       opacity: 1;
+    }
+}
+
+
+@keyframes backProjects {
+    0% {
+     
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+}
+
+@keyframes backProjectsBis {
+    0% {
+
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
     }
 }
 

@@ -14,23 +14,35 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
       })
       .when('/project/:name', {
         templateUrl: 'views/project.html',
-        controller: 'ProjectCtrl'
+        controller: 'ProjectCtrl',
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'AboutCtrl',
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+        controller: 'ContactCtrl',
       })
       .otherwise({
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+      })
+      .when('/loading', {
+        templateUrl: 'views/loading.html',
+        controller: 'LoadingCtrl'
       });
+  })
+  .run(function ($location) {
+    var prevPage = document.referrer;
+
+    console.log(prevPage);
+    if (prevPage.indexOf('localhost') <= -1) {
+      $location.path('loading');
+    }
   });
 

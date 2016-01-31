@@ -33,7 +33,7 @@
 	}
 
 	.about-page #home-about .section-container {
-		background: url('../../images/about/bg_about.jpg') no-repeat;
+		background: url('../../images/about/about.gif') center center no-repeat;
 		background-size: cover;
 	}
 		.about-page #home-about .section-container::before {

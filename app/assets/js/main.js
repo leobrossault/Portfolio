@@ -42,17 +42,17 @@ $('document').ready(function () {
 	/* FUNCTIONS */
 
 	function homePage () {
-		setTimeout(function () {
-			if (!body.hasClass('launchAnim')) {
-				body.addClass('launchAnim');
-			}
-		}, 5000);
+		// setTimeout(function () {
+		// 	if (!body.hasClass('launchAnim')) {
+		// 		body.addClass('launchAnim');
+		// 	}
+		// }, 5000);
 
-		setTimeout(function () {
-			if (!body.hasClass('isLoad')) {
-				body.addClass('isLoad');
-			}
-		}, 6000);
+		// setTimeout(function () {
+		// 	if (!body.hasClass('isLoad')) {
+		// 		body.addClass('isLoad');
+		// 	}
+		// }, 6000);
 	}
 
 	function showMenu () {

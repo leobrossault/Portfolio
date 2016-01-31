@@ -121,6 +121,55 @@
     }
 }
 
+@keyframes comeProjectsMobile {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes comeProjectsBisMobile {
+    0% {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+
+@keyframes backProjectsMobile {
+    0% {
+     
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+}
+
+@keyframes backProjectsBisMobile {
+    0% {
+
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+}
+
 /* LOADING ANIMATION */
 
 @keyframes loadingSpan {

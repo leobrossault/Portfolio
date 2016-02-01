@@ -10,11 +10,15 @@ section {
 .ng-enter .project-page {
 	animation: growthPage 1s ease-in-out forwards;
 	overflow: hidden;
+	-webkit-transform: translateZ(0);
+	-moz-backface-visibility: hidden;
 }
 
 .ng-leave .project-page {
 	animation: unGrowthPage 1s ease-in-out forwards;
 	overflow: hidden;
+	-webkit-transform: translateZ(0);
+	-moz-backface-visibility: hidden;
 }
 
 section {
@@ -292,8 +296,9 @@ section {
 				}
 
 				#info-project .contain-infos .col-right .long-descr p:first-child + p {
-					font-size: 1.8rem;
+					font-size: 1.6rem;
 					font-weight: 300;
+					line-height: 1.5;
 				}
 
 		.screen-project > div {
@@ -650,6 +655,44 @@ section {
 		body #info-project .contain-infos .col-left p.project-descr-left {
 			font-size: 1.4rem;
 		}
+}
+
+
+@media screen and (max-width: 800px) {
+	.screen-home-project .sncf {
+		background: url('../../images/projects/sncf/home_sncf_section_1_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.screen-home-project .rocket {
+		background: url('../../images/projects/rocket/home_rocket_section_1_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.screen-home-project .three {
+		background: url('../../images/projects/three/home_three_section_1_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.screen-home-project .nut-and-bolt {
+		background: url('../../images/projects/nut-and-bolt/home_nut-and-bolt_section_1_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.screen-home-project .sisley {
+		background: url('../../images/projects/sisley/home_sisley_section_1_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
 }
 
 @media screen and (max-width: 470px) {

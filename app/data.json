@@ -5,11 +5,11 @@
 			"title": "Sncf Transilien",
 			"number": "02",
 			"year": "2014",
-			"month": "December",
-			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"date": "2014, December",
-			"role": "Conception, Development",
+			"month": "Decembre",
+			"description": "SNCF Transilien est un projet réalisé en partenariat avec la SNCF à destination de ses agents.",
+			"longDescription": "L'objectif du projet était d'inciter les agents SNCF à réaliser des actions quotidiennent pour fluidifier le trafic dans les gares. L'enjeu était de présenter quelque chose de simple et rapide pour que le message soit rapidement intégrer. Pour ce faire la SNCF nous a fournie de nombreuses données que nous avons pus exploiter à travers différents graphiques. Ce projet à été conçu en collaboration avec Timothé Chesnin (Graphiste).",
+			"date": "2014, Décembre",
+			"role": "Conception, Développement",
 			"client": "SNCF & Gobelins",
 			"directory": "sncf",
 			"link": "#",
@@ -19,50 +19,50 @@
 					"image": "home_page.png"
 				},
 				{
-					"title": "Datavisualization",
+					"title": "Data visualisation",
 					"image": "datavisualization.png"
 				},
 				{
-					"title": "Datavisualization",
+					"title": "Data visualisation",
 					"image": "datavisualization2.png"
 				},
 				{
-					"title": "Mobile Version",
+					"title": "Version mobile",
 					"image": "mobile.png"
 				}
 			],
 			"video": "",
 			"prev": "sisley",
-			"next": "sncf"
+			"next": "nooke"
 		},
 		{
 			"url": "nooke",
 			"title": "Nooke",
 			"number": "01",
 			"year": "2015",
-			"month": "march",
-			"description": "Nooke, une application IOS pour lutter contre l'échec scolaire.",
-			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"date": "2014, December",
-			"role": "Conception, Development",
+			"month": "Mars",
+			"description": "Nooke est une application réalisée en partenariat avec Editis destinée à lutter contre l'echec scolaire.",
+			"longDescription": "Nooke est une application IOS (developpée en Objectiv C) permettant de réconcilier les élèves de CM1-CM2 avec la lecture. Elle est accompagnée d'un dashboard pour l'enseignant. Celui-ci peut ainsi retrouver toutes les données des élèves (temps de lecture, réussite aux exercices) et ainsi préparer ses cours en fonction. L'enfant est amené à lire un livre choisi par l'enseignant. À la fin de chaque chapitre il doit réaliser plusieurs activité permettant de jauger sa compréhension. Les élèves travaillent en équipe, c'est à dire qu'ils peuvent envoyer des messages aux membres de leur équipe si un point n'est pas bien compris. Ce projet à été conçu en collaboration avec Clémence Taillez (Graphiste).\r \n Pour plus d'infos : http://leobrossault.fr/Nooke/",
+			"date": "2015, Décembre",
+			"role": "Conception, Développement",
 			"client": "Editis & Gobelins",
 			"directory": "nooke",
 			"link": "#",
 			"sections": [
 				{
-					"title": "Teacher's Website",
+					"title": "Site de l'enseignant",
 					"image": "dashboard-2.jpg"
 				},
 				{
-					"title": "Teacher's Website",
+					"title": "Site de l'enseignant",
 					"image": "dashboard.jpg"
 				},
 				{
-					"title": "Application - Reading",
+					"title": "Application - Lecture",
 					"image": "interface-ipad.png"
 				},
 				{
-					"title": "Application - Make exercices",
+					"title": "Application - Exercices",
 					"image": "interface-ipad-2.png"
 				}
 			],
@@ -75,11 +75,11 @@
 			"title": "Rocket's Word",
 			"number": "03",
 			"year": "2014",
-			"month": "September",
-			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"date": "2014, September",
-			"role": "Conception, Development",
+			"month": "Septembre",
+			"description": "Rocket Words est une expérimentation réalisée à Gobelins avec pour thème : Son et Typographie",
+			"longDescription": "Rocket Words est une expérimentation qui permet à l'utilisateur de simuler l'envoie de son propre mot sur la lune. Pour y arriver celui-ci devra faire du bruit devant son ordinateur pour que la fusée puissent avancer dans l'espace et ainsi que ses lettres arrivent à destination.",
+			"date": "2014, Septembre",
+			"role": "Conception, Développement",
 			"client": "Gobelins",
 			"directory": "rocket",
 			"link": "#",
@@ -89,11 +89,11 @@
 					"image": "rocket's-world-01.jpg"
 				},
 				{
-					"title": "In the space",
+					"title": "Dans l'espace",
 					"image": "rocket's-world-02.jpg"
 				},
 				{
-					"title": "On the Moon",
+					"title": "Sur la Lune",
 					"image": "rocket's-world-03.jpg"
 				}
 			],
@@ -106,21 +106,21 @@
 			"title": "Three JS Workshop",
 			"number": "04",
 			"year": "2015",
-			"month": "October",
-			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"date": "2015, October",
-			"role": "Conception, Development",
+			"month": "Octobre",
+			"description": "Une expérience musicale en 3D conçu pendant un Workshop de 4 jours à Gobelins.",
+			"longDescription": "Le sujet de cette expérience était le son. L'objectif était de faire ressentir la musique à travers l'image. L'expérience à été réalisée en WebGl avec l'aide de la librairie Three JS. Afin de présenter les travaux qui ont été réalisées durant la semaine, un site à éré réalisé. J'ai pu contribuer au développement de ce site, lequel nous a permis de gagné deux 'Site of the day' (FWA and Awwwards).",
+			"date": "2015, Octobre",
+			"role": "Conception, Développement",
 			"client": "",
 			"directory": "three",
 			"link": "#",
 			"sections": [
 				{
-					"title": "Low Frequencies",
+					"title": "Basses Fréquences",
 					"image": "screen-2.jpg"
 				},
 				{
-					"title": "High Frequencies",
+					"title": "Hautes Fréquences",
 					"image": "screen-1.jpg"
 				}
 			],
@@ -133,11 +133,11 @@
 			"title": "Nut & Bolt",
 			"number": "05",
 			"year": "2015",
-			"month": "January",
-			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"date": "2015, January",
-			"role": "Conception, Development",
+			"month": "Janvier",
+			"description": "C'est une mini jeu de tir réalisé pendant une \"game jam\" d'une semaine sur Unity.",
+			"longDescription": "Le mini jeu Nut & Bold à été réalisé sur 4 jours. Il se joue de 2 à 4 joueurs avec des manettes de console (PS3). L'objectif est de tirer sur les autres joueurs à l'aide des armes et bonus ramassés sur le terrain. Le dernier survivant remporte la partie.",
+			"date": "2015, Janvier",
+			"role": "Conception, Développement",
 			"client": "Gobelins",
 			"directory": "nut-and-bolt",
 			"link": "#",
@@ -147,15 +147,15 @@
 					"image": "personnage.jpg"
 				},
 				{
-					"title": "Weapon",
+					"title": "Arme",
 					"image": "machinegun.jpg"
 				},
 				{
-					"title": "Turret",
+					"title": "Tourelle",
 					"image": "turret.jpg"
 				},
 				{
-					"title": "Stage",
+					"title": "Éléments du terrain",
 					"image": "tree.jpg"
 				}
 			],
@@ -168,17 +168,17 @@
 			"title": "Shake It Up",
 			"number": "06",
 			"year": "2016",
-			"month": "January",
-			"description": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"longDescription": "Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est. Atque vivere locus diligatur neque est in quis diligat vita nulla atque nec est.",
-			"date": "2016, January",
-			"role": "Conception, Development",
+			"month": "Janvier",
+			"description": "Shake It Up est une application IOS réalisée en partenariat avec Sisley.",
+			"longDescription": "Shake It Up est une application destinée à faire découvrir la marque Sisley au grand public. A travers l'application l'utilisateur va pouvoir mixer les éléments de son choix (en fonction de son environnement, heure, saison, etc) afin de découvrir les produits de la marque. Il devra faire des choix, mixer, appliquer avant de recevoir un code promotionnel et de se voir indiquer un magasin proche de sa position.",
+			"date": "2016, Janvier",
+			"role": "Conception, Développement",
 			"client": "Gobelins",
 			"directory": "sisley",
 			"link": "#",
 			"sections": [
 				{
-					"title": "Mix Center",
+					"title": "\"Mix Center\"",
 					"image": "mixcenter_1.jpg"
 				},
 				{
@@ -186,7 +186,7 @@
 					"image": "video_1.jpg"
 				},
 				{
-					"title": "Product",
+					"title": "Produit",
 					"image": "product_1.jpg"
 				},
 				{
@@ -194,7 +194,7 @@
 					"image": "home.jpg"
 				},
 				{
-					"title": "Store Locator",
+					"title": "Trouver un magasin",
 					"image": "map.jpg"
 				}
 			],

@@ -28,17 +28,17 @@
 		<div class="contain-infos">
 			<div class="col-left">
 				<div>
-					<p class="project-title-left">Creation</p>
+					<p class="project-title-left">Création</p>
 					<p class="project-descr-left"><span ng-bind="yearProject"></span>, <span ng-bind="monthProject"></span></p>
 				</div>
 
 				<div>
-					<p class="project-title-left">Role</p>
+					<p class="project-title-left">Rôle</p>
 					<p class="project-descr-left" ng-bind="roleProject"></p>
 				</div>
 
 				<div>
-					<p class="project-title-left">Client / Agency</p>
+					<p class="project-title-left">Client / Agence</p>
 					<p class="project-descr-left" ng-bind="clientProject"></p>
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 				<h2 ng-bind="titleProject"></h2>
 
 				<div class="long-descr">
-					<p>Project Infos</p>
+					<p>Infos du Projet</p>
 					<p ng-bind="longDescribeProject"></p>
 				</div>
 			</div>
@@ -64,14 +64,14 @@
 		</div>
 	</section>
 	
-	<div ng-if="video !== ''" class="video">
+<!-- 	<div ng-if="video !== ''" class="video">
 		<iframe ng-if="video === 'nooke'" src="https://www.youtube.com/embed/lwgM_MoeREQ" frameborder="0" allowfullscreen></iframe>
 		<iframe ng-if="video === 'nooke'" src="https://www.youtube.com/embed/N3I5U_xBGuM" frameborder="0" allowfullscreen></iframe>
 		<iframe ng-if="video === 'sisley'" src="https://www.youtube.com/embed/uuEeboUJTQs" frameborder="0" allowfullscreen></iframe>
-	</div>
+	</div> -->
 
 	<div class="change-projects clearfix">
-		<a ng-href="#/project/{{prevProject}}" ng-click="prev()"><span>Previous</span></a>
-		<a ng-href="#/project/{{nextProject}}" ng-click="next()"><span>Next</span></a>
+		<a ng-href="#/project/{{prevProject}}" ng-click="prev()"><span>Précèdent</span></a>
+		<a ng-href="#/project/{{nextProject}}" ng-click="next()"><span>Suivant</span></a>
 	</div>
 </div>

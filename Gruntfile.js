@@ -204,8 +204,8 @@ module.exports = function (grunt) {
       dist: {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
-          '<%= yeoman.dist %>/assets/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.dist %>/assets/css/*.css',
+          '<%= yeoman.dist %>/images/*/*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/assets/fonts/*'
         ]
       }
@@ -233,12 +233,12 @@ module.exports = function (grunt) {
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/assets/{,*/}*.css'],
+      css: ['<%= yeoman.dist %>/assets/css/*.css'],
       options: {
         assetsDirs: [
           '<%= yeoman.dist %>',
           '<%= yeoman.dist %>/images',
-          '<%= yeoman.dist %>/styles'
+          '<%= yeoman.dist %>/css'
         ]
       }
     },
@@ -247,15 +247,12 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
+    cssmin: {
+      dist: {
+        src: 'dist/styles/main.css',
+        dest: 'dist/styles/main.css'
+       }
+     },
     // uglify: {
     //   dist: {
     //     files: {
@@ -265,9 +262,16 @@ module.exports = function (grunt) {
     //     }
     //   }
     // },
-    // concat: {
-    //   dist: {}
-    // },
+    concat: {
+      css: {
+        src: ['<%= yeoman.app %>/assets/css/*.css', '!<%= yeoman.app %>/assets/css/main.css'],
+        dest: 'dist/styles/main.css'
+      },
+      js: {
+        src: ['<%= yeoman.app %>/assets/js/*.js', '<%= yeoman.app %>/scripts/*/*.js'],
+        dest: 'dist/scripts/main.js'
+      }
+    },
 
     imagemin: {
       dist: {
@@ -424,7 +428,6 @@ module.exports = function (grunt) {
     'ngAnnotate',
     'copy:dist',
     'cdnify',
-    'cssmin',
     'uglify',
     'filerev',
     'usemin',

@@ -13,8 +13,8 @@ angular
   	.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        templateUrl: 'views/loading.html',
+        controller: 'LoadingCtrl'
       })
       .when('/project/:name', {
         templateUrl: 'views/project.html',
@@ -38,11 +38,11 @@ angular
       });
   })
   .run(function ($location) {
-    var prevPage = document.referrer;
+    // var prevPage = document.referrer;
 
-    console.log(prevPage);
-    if (prevPage.indexOf('localhost') <= -1) {
-      $location.path('loading');
-    }
+    // if (prevPage.indexOf('localhost') <= -1) {
+    //   $location.path('loading');
+    // }
+    $location.path('loading');
   });
 

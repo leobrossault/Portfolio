@@ -162,6 +162,7 @@
 			.about-page #descr-about p {
 				margin: 0;
 				font-size: 15px;
+				line-height: 1.5;
 			}
 
 			.about-page #descr-about > div > p {

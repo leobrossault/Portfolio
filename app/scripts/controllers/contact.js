@@ -26,8 +26,11 @@ angular.module('portfolioApp')
       $('body').removeClass('about');
     }
 
+    // Particle bg
+    particlesJS.load('particles-js', 'scripts/lib/particles/particles.json', function() {});
+
   	// Change button 'Say Hello'
-  	$('#btn-hello').attr('href', '#/');
+  	$('#btn-hello').attr('href', '#/home');
   	$('#btn-hello span').text('Home');
 
   	// Get focus

@@ -155,9 +155,23 @@ body,
 		width: 100%;
 		height: 100%;
 		display: table;
-		background: #40decd;
+		background: #fff;
 		z-index: 1;
+		animation: bgBody 2s 1s forwards;
 	}
+
+	.bg-all-page > div p {
+		opacity: 0;
+		animation: textBody 2s 1s forwards;
+	}
+
+		.isLoad .bg-all-page {
+			background: #40decd;
+		}
+
+		.isLoad .bg-all-page > div p {
+			opacity: 1;
+		}
 
 		.bg-all-page > div {
 			display: table-cell;
@@ -414,7 +428,7 @@ body,
 		.screen-home-project > a:hover > div {
 			transform: translateY(0);
 			opacity: 1;
-		} 
+		}
 
 	.screen-home-project a.nooke .indic-project {
 		background: #FD6967;
@@ -583,7 +597,7 @@ body,
 		display: block;
 		height: calc(100% / 6);
 	}
-	
+
 	.ng-enter .screen-home-project:nth-child(even) {
 		animation: comeProjectsMobile 1s ease-in-out forwards;
 	}
@@ -642,5 +656,5 @@ body,
 		#title a:first-child,
 		#title a:first-child + a {
 			font-size: 1.2rem;
-		}	
+		}
 }

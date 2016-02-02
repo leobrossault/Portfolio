@@ -97,7 +97,7 @@
 
 @keyframes backProjects {
     0% {
-     
+
     }
     70% {
       opacity: 1;
@@ -146,7 +146,7 @@
 
 @keyframes backProjectsMobile {
     0% {
-     
+
     }
     70% {
       opacity: 1;
@@ -171,6 +171,25 @@
 }
 
 /* LOADING ANIMATION */
+
+@keyframes bgBody {
+    0% {
+      background: #fff;
+    }
+    100% {
+      background: #40decd;
+    }
+}
+
+@keyframes textBody {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 
 @keyframes loadingSpan {
     0% {

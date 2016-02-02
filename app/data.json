@@ -7,7 +7,7 @@
 			"year": "2014",
 			"month": "Decembre",
 			"description": "SNCF Transilien est un projet réalisé en partenariat avec la SNCF à destination de ses agents.",
-			"longDescription": "L'objectif du projet était d'inciter les agents SNCF à réaliser des actions quotidiennent pour fluidifier le trafic dans les gares. L'enjeu était de présenter quelque chose de simple et rapide pour que le message soit rapidement intégrer. Pour ce faire la SNCF nous a fournie de nombreuses données que nous avons pus exploiter à travers différents graphiques. Ce projet à été conçu en collaboration avec Timothé Chesnin (Graphiste).",
+			"longDescription": "L'objectif du projet était d'inciter les agents SNCF a réaliser des actions quotidiennent pour fluidifier le trafic dans les gares. L'enjeu était de présenter quelque chose de simple et rapide pour que le message soit rapidement intégrer. Pour ce faire la SNCF nous a fournie de nombreuses données que nous avons pus exploiter à travers différents graphiques.",
 			"date": "2014, Décembre",
 			"role": "Conception, Développement",
 			"client": "SNCF & Gobelins",
@@ -33,7 +33,13 @@
 			],
 			"video": "",
 			"prev": "sisley",
-			"next": "nooke"
+			"next": "nooke",
+			"partner": [
+				{
+					"name": "Timothée Chesnin",
+					"link": "http://timhawk.com/"
+				}
+			]
 		},
 		{
 			"url": "nooke",
@@ -42,7 +48,7 @@
 			"year": "2015",
 			"month": "Mars",
 			"description": "Nooke est une application réalisée en partenariat avec Editis destinée à lutter contre l'echec scolaire.",
-			"longDescription": "Nooke est une application IOS (developpée en Objectiv C) permettant de réconcilier les élèves de CM1-CM2 avec la lecture. Elle est accompagnée d'un dashboard pour l'enseignant. Celui-ci peut ainsi retrouver toutes les données des élèves (temps de lecture, réussite aux exercices) et ainsi préparer ses cours en fonction. L'enfant est amené à lire un livre choisi par l'enseignant. À la fin de chaque chapitre il doit réaliser plusieurs activité permettant de jauger sa compréhension. Les élèves travaillent en équipe, c'est à dire qu'ils peuvent envoyer des messages aux membres de leur équipe si un point n'est pas bien compris. Ce projet à été conçu en collaboration avec Clémence Taillez (Graphiste).\r \n Pour plus d'infos : http://leobrossault.fr/Nooke/",
+			"longDescription": "Nooke est une application IOS (developpée en Objectiv C) permettant de réconcilier les élèves de CM1-CM2 avec la lecture. Elle est accompagnée d'un dashboard pour l'enseignant. Celui-ci peut ainsi retrouver toutes les données des élèves (temps de lecture, réussite aux exercices) et ainsi préparer ses cours en fonction. L'enfant est amené à lire un livre choisi par l'enseignant. À la fin de chaque chapitre il doit réaliser plusieurs activité permettant de jauger sa compréhension. Les élèves travaillent en équipe, c'est à dire qu'ils peuvent envoyer des messages aux membres de leur équipe si un point n'est pas bien compris. Pour plus d'infos : http://leobrossault.fr/Nooke/",
 			"date": "2015, Décembre",
 			"role": "Conception, Développement",
 			"client": "Editis & Gobelins",
@@ -68,7 +74,13 @@
 			],
 			"video": "nooke",
 			"prev": "sncf",
-			"next": "rocket"
+			"next": "rocket",
+			"partner": [
+				{
+					"name": "Clémence Taillez",
+					"link": "http://clemence-taillez.fr/"
+				}
+			]
 		},
 		{
 			"url": "rocket",
@@ -99,7 +111,8 @@
 			],
 			"video": "",
 			"prev": "nooke",
-			"next": "three"
+			"next": "three",
+			"partner": []
 		},
 		{
 			"url": "three",
@@ -126,7 +139,8 @@
 			],
 			"video": "",
 			"prev": "nooke",
-			"next": "nut-and-bolt"
+			"next": "nut-and-bolt",
+			"partner": []
 		},
 		{
 			"url": "nut-and-bolt",
@@ -161,7 +175,17 @@
 			],
 			"video": "",
 			"prev": "three",
-			"next": "sisley"
+			"next": "sisley",
+			"partner": [
+				{
+					"name": "Valentin Daguenet",
+					"link": "http://vdaguenet.fr/"
+				},
+				{
+					"name": "Arthur Robert",
+					"link": "http://codepen.io/Tournevis/"
+				}
+			]
 		},
 		{
 			"url": "sisley",
@@ -200,7 +224,21 @@
 			],
 			"video": "sisley",
 			"prev": "nut-and-bolt",
-			"next": "sncf"
+			"next": "sncf",
+			"partner": [
+				{
+					"name": "Jérémie Drazic",
+					"link": "https://github.com/JeremieDrazic"
+				},
+				{
+					"name": "Alice Ung",
+					"link": "http://ungalice.fr/"
+				},
+				{
+					"name": "Sophie Broche",
+					"link": "https://twitter.com/sophiebroche"
+				}
+			]
 		}
 	]
 }

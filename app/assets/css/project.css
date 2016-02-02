@@ -81,19 +81,19 @@ section {
 
 			#nav div > div::after {
 				content: "";
-				position: absolute;	
+				position: absolute;
 				width: 11px;
 				height: 11px;
 				border-radius: 100%;
 				z-index: 5;
 				top: 0;
-				left: 0;		
+				left: 0;
 			}
 
 			#nav div > div:last-child {
 				margin: 0;
 			}
-			
+
 			/* SNCF DEFAULT */
 			#nav div > div.active::after {background: #65224B;}
 			#nav div > div.active::before {
@@ -111,7 +111,7 @@ section {
 		}
 
 		#nav div .chapter-nav:first-child + span {
-			top: 1.6rem;		
+			top: 1.6rem;
 		}
 
 		#nav div .chapter-nav:first-child + span + div + span {
@@ -148,7 +148,7 @@ section {
 		float: left;
 		opacity: 0;
 		animation: animBottomToTop 0.8s 0.5s ease-in-out forwards;
-	}	
+	}
 
 	#home-project .name .title + p {
 		float: right;
@@ -156,7 +156,7 @@ section {
 		opacity: 0;
 		animation: animTopToBottom 0.8s 0.7s ease-in-out forwards;
 	}
-	
+
 	#home-project .name .date {
 		font-family: 'Times';
 		font-style: italic;
@@ -210,7 +210,7 @@ section {
 				width: 25%;
 				float: left;
 				padding-top: 16.2rem;
-			}	
+			}
 
 				#info-project .contain-infos .col-left div {
 					margin-bottom: 7rem;
@@ -257,7 +257,7 @@ section {
 				padding-top: 7.5rem;
 			}
 
-				
+
 				#info-project .contain-infos .col-right h2 {
 					color: #333333;
 					text-transform: uppercase;
@@ -340,10 +340,12 @@ section {
 				}
 
 			.screen-project .contain-screen img {
-				float: right;
+				/*float: right;*/
 				max-width: 85%;
 				padding-top: 2rem;
 				opacity: 0;
+				display: block;
+				margin: auto;
 			}
 
 				.screen-project.isIt .contain-screen img {
@@ -353,6 +355,34 @@ section {
 	.video iframe {
 		display: block;
 	}
+
+	#collaborator {
+		height: auto;
+		padding: 30px 0;
+		text-align: center;
+	}
+
+		#collaborator > div > p {
+			text-align: center;
+			font-size: 15px;
+		}
+
+		#collaborator .partners {
+				display: block;
+				text-align: center;
+		}
+
+			#collaborator .partners a {
+				color: #000;
+				text-decoration: none;
+				font-size: 24px;
+				line-height: 1.5;
+				transition: all 0.4s ease-in-out;
+			}
+
+				#collaborator .partners a:hover {
+					color: #40decd;
+				}
 
 	.change-projects {
 		background: #fff;
@@ -421,20 +451,20 @@ section {
 	background: url('../../images/projects/nooke/home_nooke_section_1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;	
+	background-position: center center;
 }
 
 .nooke #info-project {
 	background: url('../../images/projects/nooke/nooke_section_2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;	
+	background-position: center center;
 }
 
 .nooke #nav div > div.active::after {
 	background: #FD6967;
 }
-	
+
 	.nooke .video {
 		height: 150%;
 	}
@@ -464,7 +494,7 @@ section {
 	background: url('../../images/projects/sncf/sncf_section_2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;	
+	background-position: center center;
 }
 
 /* ROCKET */
@@ -489,7 +519,7 @@ section {
 	background: #31c7dd url('../../images/projects/rocket/rocket_section_2.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center bottom;	
+	background-position: center bottom;
 }
 
 .rocket #nav div > div.active::after  {
@@ -518,7 +548,7 @@ section {
 	background: url('../../images/projects/three/three_section_2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;	
+	background-position: center center;
 }
 
 .three #nav div > div.active::after  {
@@ -546,7 +576,7 @@ section {
 	background: url('../../images/projects/nut-and-bolt/nut-and-bolt_section_2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;	
+	background-position: center center;
 }
 
 .nut-and-bolt #nav div > div.active::after  {
@@ -585,7 +615,7 @@ section {
 		background: url('../../images/projects/sisley/sisley_section_2.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: left top;	
+		background-position: left top;
 	}
 
 .sisley .screen-project .contain-screen img {
@@ -635,7 +665,7 @@ section {
 	#info-project .contain-infos .col-right {
 		padding-top: 3.5rem;
 	}
-		
+
 
 		body #info-project .contain-infos .col-left div {
 			margin-bottom: 0;

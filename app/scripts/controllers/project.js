@@ -13,7 +13,7 @@ angular.module('portfolioApp')
     $scope.pageClass = 'page-project';
 
      var project = $routeParams.name;
-	   $http.get('data.json').success(function(data) { 
+	   $http.get('data.json').success(function(data) {
     	for (var i = 0; i < data.projects.length; i ++) {
     		if (data.projects[i].url == project) {
           $scope.urlProject = data.projects[i].url;
@@ -30,6 +30,7 @@ angular.module('portfolioApp')
           $scope.prevProject = data.projects[i].prev;
           $scope.nextProject = data.projects[i].next;
           $scope.video = data.projects[i].video;
+          $scope.partner = data.projects[i].partner;
     		}
     	}
     });
@@ -58,7 +59,7 @@ angular.module('portfolioApp')
     if ($('.content-view').hasClass('project-page')) {
       $('.contain-view').scroll(function (event) {
           var scrollY = $(this).scrollTop();
-          
+
           if (scrollY != 0) {
             $('body').addClass('scroll');
           } else {

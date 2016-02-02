@@ -63,7 +63,16 @@
 			</div>
 		</div>
 	</section>
-	
+
+	<section id="collaborator" ng-if="partner.length > 0">
+		<div>
+			<p>Un projet réalisé avec</p>
+			<div>
+				<div ng-repeat="partner in partner" class="partners"><a href="{{partner.link}}" target="_blank">{{partner.name}}</a></div>
+			</div>
+		</div>
+	</section>
+
 <!-- 	<div ng-if="video !== ''" class="video">
 		<iframe ng-if="video === 'nooke'" src="https://www.youtube.com/embed/lwgM_MoeREQ" frameborder="0" allowfullscreen></iframe>
 		<iframe ng-if="video === 'nooke'" src="https://www.youtube.com/embed/N3I5U_xBGuM" frameborder="0" allowfullscreen></iframe>

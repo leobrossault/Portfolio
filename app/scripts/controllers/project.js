@@ -50,7 +50,7 @@ angular.module('portfolioApp')
 
     // Change button 'Say Hello'
     var btnHello = $('#btn-hello');
-    btnHello.attr('href', '#/contact');
+    btnHello.attr('href', '/contact');
     btnHello.find($('span')).text('Say Hello');
     btnHello.click(function () {
       $('project-page').addClass('leave');

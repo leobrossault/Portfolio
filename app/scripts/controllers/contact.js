@@ -30,7 +30,7 @@ angular.module('portfolioApp')
     particlesJS.load('particles-js', 'scripts/lib/particles/particles.json', function() {});
 
   	// Change button 'Say Hello'
-  	$('#btn-hello').attr('href', '#/home');
+  	$('#btn-hello').attr('href', '/home');
   	$('#btn-hello span').text('Home');
 
   	// Get focus

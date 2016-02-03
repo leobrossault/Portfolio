@@ -10,7 +10,7 @@
  */
 angular
   	.module('portfolioApp', ['ngRoute', 'ngAnimate'])
-  	.config(function ($routeProvider) {
+  	.config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/loading.html',
@@ -40,6 +40,8 @@ angular
         templateUrl: 'views/loading.html',
         controller: 'LoadingCtrl',
       });
+
+      $locationProvider.html5Mode(true);
   })
   .run(function ($location) {
     $location.path('loading');

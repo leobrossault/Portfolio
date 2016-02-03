@@ -135,6 +135,9 @@ section {
 		animation: animLeftToRight 0.8s 0.3s ease-in-out forwards;
 	}
 
+		.ng-leave #home-project .number {
+			animation: leftToRightBack 0.5s ease-in-out forwards;
+		}
 
 	#home-project .name .title {
 		font-size: 5.5rem;
@@ -150,12 +153,20 @@ section {
 		animation: animBottomToTop 0.8s 0.5s ease-in-out forwards;
 	}
 
+		.ng-leave #home-project .name .title {
+			animation: topToBottomBack 0.5s ease-in-out forwards;
+		}
+
 	#home-project .name .title + p {
 		float: right;
 		max-width: 49%;
 		opacity: 0;
 		animation: animTopToBottom 0.8s 0.7s ease-in-out forwards;
 	}
+
+		.ng-leave #home-project .name .title + p {
+			animation: topToBottomBack 0.5s ease-in-out forwards;
+		}
 
 	#home-project .name .date {
 		font-family: 'Times';
@@ -638,6 +649,12 @@ section {
 			float: none;
 			max-width: 100%;
 		}
+}
+
+@media screen and (max-width: 800px) {
+	#nav {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 680px) {

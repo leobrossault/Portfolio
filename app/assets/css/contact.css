@@ -4,15 +4,21 @@
 	display: none;
 }
 
-	.contact-page #particles-js {
+	/*.contact-page #particles-js {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		z-index: 1;
+	}*/
+
+	.contact-page .contain-contact {
+		position: relative;
+		height: 100%;
+		width: 100%;
 	}
 
-	.contact-page > div {
+	.contain-contact > div {
 		height: 100%;
 		display: flex;
 		align-items: center;
@@ -21,7 +27,7 @@
 	}
 
 
-		.contact-page > canvas {
+		.contain-contact > canvas {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -29,14 +35,14 @@
 			height: 100%;
 		}
 
-		.contact-page > div > div {
+		.contain-contact > div > div {
 			box-sizing: border-box;
 			padding: 0 10%;
 			width: 100%;
 		}
 
 
-	.contact-page > .left {
+	.contain-contact > .left {
 		color: #fff;
 		width: 60%;
 		position: relative;
@@ -44,7 +50,7 @@
 		opacity: 0;
 	}
 
-	.contact-page > .right {
+	.contain-contact > .right {
 		width: 40%;
 		color: #fff;
 		position: relative;
@@ -52,27 +58,27 @@
 		opacity: 0;
 	}
 
-	.contact .contact-page > .left {
+	.contact .contain-contact > .left {
 		animation: leftToRight 1.5s ease-in-out forwards;
 	}
 
-	.contact .contact-page > .right {
+	.contact .contain-contact > .right {
 		animation: rightToLeft 1.5s ease-in-out forwards;
 	}
 
-	.ng-leave .contact-page > .left {
+	.ng-leave .contain-contact > .left {
 		animation: rightToLeftBack 0.4s ease-in-out forwards;
 	}
 
-	.ng-leave .contact-page > .right {
+	.ng-leave .contain-contact > .right {
 		animation: leftToRightBack 0.4s ease-in-out forwards;
 	}
 
-	.ng-leave .contact-page > canvas {
+	.ng-leave .contain-contact > canvas {
 		display: none;
 	}
 
-	.contact-page > .left h3 {
+	.contain-contact > .left h3 {
 		text-align: right;
 		font-size: 50px;
 		line-height: 52px;
@@ -81,28 +87,28 @@
 		text-transform: uppercase;
 	}
 
-	.contact-page > .left h3 + p {
+	.contain-contact > .left h3 + p {
 		text-align: right;
 		font-size: 14px;
 		font-weight: 100;
 	}
 
-	.contact-page > .left .coordonate {
+	.contain-contact > .left .coordonate {
 		margin-top: 20px;
 		max-width: 400px;
 		float: right;
 		width: 100%;
 	}
 
-		.contact-page > .left .coordonate > div {
+		.contain-contact > .left .coordonate > div {
 			border-top: 1px solid #fff;
 			padding-top: 5px;
 			text-align: right;
 			padding-left: 10px;
 		}
 
-			.contact-page > .left .coordonate > div p,
-			.contact-page > .left .coordonate > div a {
+			.contain-contact > .left .coordonate > div p,
+			.contain-contact > .left .coordonate > div a {
 				margin-top: 0;
 				margin-bottom: 5px;
 				color: #fff;
@@ -112,8 +118,8 @@
 				display: block;
 			}
 
-	.contact-page > .right .input-text,
-	.contact-page > .right .text-area {
+	.contain-contact > .right .input-text,
+	.contain-contact > .right .text-area {
 		position: relative;
 		width: 100%;
 		height: 35px;
@@ -121,10 +127,10 @@
 		overflow: hidden;
 	}
 
-		.contact-page > .right .input-text::before,
-		.contact-page > .right .text-area::before,
-		.contact-page > .right .input-text::after,
-		.contact-page > .right .text-area::after {
+		.contain-contact > .right .input-text::before,
+		.contain-contact > .right .text-area::before,
+		.contain-contact > .right .input-text::after,
+		.contain-contact > .right .text-area::after {
 			content: "";
 			position: absolute;
 			left: 0;
@@ -134,8 +140,8 @@
 			background: #fff;
 		}
 
-		.contact-page > .right .input-text::after,
-		.contact-page > .right .text-area::after {
+		.contain-contact > .right .input-text::after,
+		.contain-contact > .right .text-area::after {
 			max-width: 0;
 			left: inherit;
 			right: 0;
@@ -143,18 +149,18 @@
 			transition: all 0.6s ease-in-out;
 		}
 
-		.contact-page > .right .input-text.focus::after,
-		.contact-page > .right .text-area.focus::after {
+		.contain-contact > .right .input-text.focus::after,
+		.contain-contact > .right .text-area.focus::after {
 			max-width: 100%;
 		}
 
-	.contact-page > .right .text-area {
+	.contain-contact > .right .text-area {
 		height: 200px;
 	}
 
-		.contact-page > .right input[type="text"],
-		.contact-page > .right input[type="email"],
-		.contact-page > .right textarea {
+		.contain-contact > .right input[type="text"],
+		.contain-contact > .right input[type="email"],
+		.contain-contact > .right textarea {
 			border: none;
 			background: none;
 			outline: none;
@@ -172,13 +178,13 @@
 			transition: color 0.4s ease-in-out;
 		}
 
-			.contact-page > .right .focus input[type="text"],
-			.contact-page > .right .focus input[type="email"],
-			.contact-page > .right .focus textarea {
+			.contain-contact > .right .focus input[type="text"],
+			.contain-contact > .right .focus input[type="email"],
+			.contain-contact > .right .focus textarea {
 				color: #031927;
 			}
 
-		.contact-page > .right label {
+		.contain-contact > .right label {
 			position: absolute;
 			top: 8px;
 			font-style: italic;
@@ -187,25 +193,25 @@
 			transition: all 0.4s ease-in-out;
 		}
 
-			.contact-page > .right .focus label {
+			.contain-contact > .right .focus label {
 				transform: translateY(30px);
 			}
 
-			.contact-page > .right .filled label,
-			.contact-page > .right .focus.filled label {
+			.contain-contact > .right .filled label,
+			.contain-contact > .right .focus.filled label {
 				transform: translateY(30px);
 			}
 
-			.contact-page > .right .focus.text-area label {
+			.contain-contact > .right .focus.text-area label {
 				transform: translateY(230px);
 			}
 
-			.contact-page > .right .filled.text-area label,
-			.contact-page > .right .focus.filled.text-area label {
+			.contain-contact > .right .filled.text-area label,
+			.contain-contact > .right .focus.filled.text-area label {
 				transform: translateY(230px);
 			}
 
-		.contact-page > .right input[type="submit"] {
+		.contain-contact > .right input[type="submit"] {
 			border: 2px solid #fff;
 			width: 120px;
 			text-transform: uppercase;
@@ -225,7 +231,7 @@
 			transition: all 0.4s ease-in-out;
 		}
 
-			.contact-page > .right input[type="submit"]:hover {
+			.contain-contact > .right input[type="submit"]:hover {
 				background: #fff;
 				color: #40decd;
 			}
@@ -278,7 +284,7 @@ form {
 /* RESPONSIVE */
 
 @media screen and (max-width: 670px) {
-	body .contact-page > .left .coordonate > div {
+	body .contain-contact > .left .coordonate > div {
 		display: block;
 		width: 100%;
 		position: relative;
@@ -286,11 +292,11 @@ form {
 		float: none;
 	}
 
-		body .contact-page > .left .coordonate > div.left {
+		body .contain-contact > .left .coordonate > div.left {
 			margin-bottom: 15px;
 		}
 
-		body .contact-page > .left .coordonate > div::before {
+		body .contain-contact > .left .coordonate > div::before {
 			content: "";
 			position: absolute;
 			right: 0;
@@ -303,28 +309,31 @@ form {
 }
 
 @media screen and (max-width: 750px) {
-	body .contact-page > .left,
-	body .contact-page > .right {
+	body .contain-contact > .left,
+	body .contain-contact > .right {
 		float: none;
 		height: auto;
 		width: 100%;
 		display: block;
 	}
 
-	body .contact-page > .left .coordonate {
+	body .contain-contact > .left .coordonate {
 		display: none;
 	}
 
-	body .contact-page > .left h3,
-	body .contact-page > .left h3 + p {
+	body .contain-contact > .left h3,
+	body .contain-contact > .left h3 + p {
 		text-align: center;
 	}
 
 	.contact .contain-view > div:first-child {
 		display: table;
 	}
-
 		body .contact-page {
+				display: table;
+		}
+
+		body .contain-contact {
 			display: table-cell;
 			vertical-align: middle;
 			height: 100%;
@@ -332,21 +341,21 @@ form {
 }
 
 @media screen and (max-width: 500px) {
-	body .contact-page > .right .text-area {
+	body .contain-contact > .right .text-area {
 		height: 110px;
 	}
 }
 
 @media screen and (max-width: 350px) {
-	body .contact-page > .left h3 + p {
+	body .contain-contact > .left h3 + p {
 		display: none;
 	}
 
-	body .contact-page > .left h3 {
+	body .contain-contact > .left h3 {
 		font-size: 19px;
 	}
 
-		body .contact-page > .left h3 br {
+		body .contain-contact > .left h3 br {
 			display: none;
 		}
 }

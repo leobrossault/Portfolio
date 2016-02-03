@@ -40,15 +40,22 @@ section {
 		max-width: 70rem;
 	}
 
-	#nav {
-		position: fixed;
+ 	#nav {
+		position: fixed !important;
 		right: 10%;
 		top: 0%;
 		z-index: 999;
 		height: 100%;
 		display: flex;
 		align-items: center;
+		/*opacity: 1;*/
+		/*transition: all 0.4s ease-in-out;*/
 	}
+
+	/*.ng-leave #nav,
+	.ng-enter #nav {
+		opacity: 0;
+	}*/
 
 		#nav div {
 			position: relative;
@@ -63,8 +70,27 @@ section {
 			position: relative;
 			z-index: 10;
 			border-radius: 100%;
+			opacity: 1;
 			border: 1px solid #e8d6d9;
 		}
+
+		#nav div > div:first-child {
+			transition: all 0.4s ease-in-out;
+		}
+
+		#nav div > div:first-child + span + div {
+			transition: all 0.4s 0.2s ease-in-out;
+		}
+
+		#nav div > div:last-child {
+			transition: all 0.4s 0.4s ease-in-out;
+		}
+
+		.ng-enter #nav div > div,
+		.ng-leave #nav div > div {
+			opacity: 0;
+		}
+
 			#nav div > div::before {
 				content: "";
 				position: absolute;
